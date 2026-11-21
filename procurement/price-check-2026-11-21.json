@@ -1,0 +1,84 @@
+{
+  "checked_date": "2026-11-21",
+  "currency": "CNY",
+  "price_basis": "Public merchant SKU listing, not checkout total or purchase confirmation.",
+  "printing_cost_excluded": true,
+  "delivery_address_set": false,
+  "pinduoduo": {
+    "verified_current_price": null,
+    "reference_url": "https://mobile.yangkeduo.com/goods.html?goods_id=999904650372",
+    "access_result": "未取得可核对的当前商品报价。"
+  },
+  "ordinary_donor_candidates": [
+    {
+      "merchant": "义乌博悦数码 / 义乌购",
+      "url": "https://www.yiwugo.com/product/detail/987170484.html?loc=22",
+      "minimum_order_boxes": 1,
+      "seller_marks_export_only": true,
+      "shipping_display": "免运费、快递0元起；目的省份未设置",
+      "domestic_delivery_confirmed": false,
+      "selected_variant": null,
+      "variants": [
+        {
+          "description": "E88Pro 黑色单摄 1电池套餐",
+          "listed_rmb": 34.0
+        },
+        {
+          "description": "E88Pro 黑色单摄 2电池套餐",
+          "listed_rmb": 38.0
+        },
+        {
+          "description": "E88Pro 黑色单摄 3电池套餐",
+          "listed_rmb": 42.0
+        },
+        {
+          "description": "E88Pro 黑色双摄 1电池套餐",
+          "listed_rmb": 37.0
+        },
+        {
+          "description": "E88Pro 黑色双摄 2电池套餐",
+          "listed_rmb": 41.0
+        },
+        {
+          "description": "E88Pro 黑色双摄 3电池套餐",
+          "listed_rmb": 45.0
+        }
+      ],
+      "remote_charger_video_compatibility_confirmed": false,
+      "programmable_firmware_confirmed": false,
+      "v07_mechanical_fit_confirmed": false,
+      "note": "20元最低选项为5块电池，不是无人机。多电池套餐增加换电次数，不代表单块续航翻倍。"
+    }
+  ],
+  "programmable_reference_candidates": [
+    {
+      "description": "斑梨 ESP32-MINI-Drone-A 未焊接版",
+      "listed_rmb": 99.0,
+      "url": "https://spotpear.cn/shop/ESP32-MINI-Drone-DIY-Quadcopter-Drone.html",
+      "camera_or_video_inclusion_confirmed": false,
+      "compatibility_with_v07_esp_drone_s2_wiring_confirmed": false
+    },
+    {
+      "description": "斑梨 ESP32-MINI-Drone-A-Kit 已焊接版",
+      "listed_rmb": 159.0,
+      "url": "https://spotpear.cn/shop/ESP32-MINI-Drone-DIY-Quadcopter-Drone/ESP32-MINI-Drone-A-Kit.html",
+      "camera_or_video_inclusion_confirmed": false,
+      "compatibility_with_v07_esp_drone_s2_wiring_confirmed": false
+    }
+  ],
+  "excluded_lowest_prices": [
+    {
+      "description": "E88摄像版38元/43元批发阶梯价",
+      "url": "https://www.chinagoods.com/store/goodsdetail/1986691834598158338",
+      "reason": "38元要求至少3600件，43元至少36件，不按单件采购价推荐。"
+    },
+    {
+      "description": "E88 48元最低价",
+      "url": "https://www.yiwugo.com/product/detail/942926526.html?loc=15",
+      "reason": "48元对应无摄像头单电，页面还标120盒起购。"
+    }
+  ],
+  "actual_checkout_total_rmb": null,
+  "actual_hardware_selected": false,
+  "hardware_dimensions_measured": false
+}

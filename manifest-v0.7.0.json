@@ -1,0 +1,229 @@
+{
+  "release": "v0.7.0-prototype",
+  "date": "2026-11-21",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 97,
+      "sha256": "435cf0761bdbbe607f3261dfeb94202517f06a1ae434450b37be1a5adeccd5d2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 144,
+      "sha256": "0547df4627bec49787f2ad33ea85cf571cf557526029e403c6c5301d9335a248"
+    },
+    {
+      "path": "assets/quad-v07-dimensions.svg",
+      "bytes": 3878,
+      "sha256": "27d52c641e907c76f79851fce14f1e9a851be8d2c82dcd4170770280aa997de4"
+    },
+    {
+      "path": "assets/quad-v07-exploded.png",
+      "bytes": 934390,
+      "sha256": "818fbab8e871245aea29b32c8848da64c7350182661523e4c21c4a9c2e177340"
+    },
+    {
+      "path": "assets/quad-v07-hero.png",
+      "bytes": 885320,
+      "sha256": "53afd4d77eb0a1c552b7c52fca7e040d650e54cbf7ac0c624ff89e4359efbb39"
+    },
+    {
+      "path": "assets/quad-v07-top.png",
+      "bytes": 783615,
+      "sha256": "802f434a5c492240dca2d269cb6dc78d27fd176dd63f793a1ed8469cbc6250ad"
+    },
+    {
+      "path": "assets/quad-v07-wiring.svg",
+      "bytes": 5604,
+      "sha256": "68077b927f47e40d10bd4f0312328ada9dede9102bddf0e948369e8fa8b840ea"
+    },
+    {
+      "path": "cad/quad-camera-cover-v07.scad",
+      "bytes": 4044,
+      "sha256": "65eaacc686bb2b7023ab3c9a7d36abd09b45104b6c0367167b1df1cfbebdf4c4"
+    },
+    {
+      "path": "cad/quad-camera-cover-v07.stl",
+      "bytes": 50184,
+      "sha256": "5da53c5f3ebac074236802a00c35e41500c466e1830324d503ad63147c2a21e3"
+    },
+    {
+      "path": "cad/quad-collar-gauge-v07.stl",
+      "bytes": 29284,
+      "sha256": "767b0274b833a30123b41217accd1f76d804a8f01071f1f543601e43fdcb004d"
+    },
+    {
+      "path": "cad/quad-cover-gauge-v07.stl",
+      "bytes": 43084,
+      "sha256": "ed9622d585cb1bd78030b4d0838f3c9367e8c568ae989eab327ff4bd5182c8ff"
+    },
+    {
+      "path": "cad/quad-foot-v07.stl",
+      "bytes": 28884,
+      "sha256": "cbd3b478d25d09b5912a1655bf03f9e038dbedfb541f76d958fbdafa6d3850dc"
+    },
+    {
+      "path": "cad/quad-frame-v07.stl",
+      "bytes": 367884,
+      "sha256": "cd70339b0c02d305cf75858b5d5552b0d36c5a4fa3df0097ce000201df1d6597"
+    },
+    {
+      "path": "cad/quad-structure-v07.scad",
+      "bytes": 5719,
+      "sha256": "35e8e4382102a47f3e7fa94b2b50d1da2761772fe23516dc72976885a865982c"
+    },
+    {
+      "path": "cad/quad-v07-assembly-geometry.3mf",
+      "bytes": 104387,
+      "sha256": "958f1a5d26305a4bc7d2993a2b27c353310f59bbad209ca43137b46a23879ff7"
+    },
+    {
+      "path": "cad/quad-v07-assembly-r21.c4d",
+      "bytes": 647594,
+      "sha256": "2297b566fccaa879ce0d230ef927a36366f72f0d5d335624dc72db9fbee59f55"
+    },
+    {
+      "path": "cad/quad-v07-exploded-r21.c4d",
+      "bytes": 630618,
+      "sha256": "938d80df16cf4b104b1b20d3e4ec789223562b082d5c64843e64564b1001133a"
+    },
+    {
+      "path": "cad/wifi-quad-battery-spacer.scad",
+      "bytes": 346,
+      "sha256": "e4284a0d2d137c643a413f942aab149136d937d06b01781a5c237844007accb2"
+    },
+    {
+      "path": "cad/wifi-quad-battery-spacer.stl",
+      "bytes": 12884,
+      "sha256": "bb2fd2d4765fdbd0065e5896cf93bdff099909d2bbee27a3db02510156671a8c"
+    },
+    {
+      "path": "cad/wifi-quad-battery-tray-fit.stl",
+      "bytes": 81284,
+      "sha256": "d5dfc4bedc75d51e5826520e3def6c5290e86f8349428936d29ea1b6de3268ef"
+    },
+    {
+      "path": "cad/wifi-quad-battery-tray.scad",
+      "bytes": 2923,
+      "sha256": "08f5eb49b8ce7fe3f29e73ad0c45bdb81cd0a3e110da75bd3bb833437cc135a3"
+    },
+    {
+      "path": "data/electrical-map-v07.json",
+      "bytes": 3639,
+      "sha256": "b507649440ef8c69186900319243f09d64500b550a0f9d954d5c1a9d686579bb"
+    },
+    {
+      "path": "data/gpio-map-reference.json",
+      "bytes": 579,
+      "sha256": "ef6fdcbfe2ed4e8d6cd622c516f68397accfa6effd1f35924dc488516d59ce37"
+    },
+    {
+      "path": "data/native-scene-check-v07.json",
+      "bytes": 5942,
+      "sha256": "2e1931786f8d8a53f61f2bd57d759ddf4d7ad7005442ea9092d9d1c0da2fb045"
+    },
+    {
+      "path": "data/program-check-v07.json",
+      "bytes": 267,
+      "sha256": "83684fafd904f34630e59c9cfd9725f41310467597f3d3dbee029a0bae8e98d4"
+    },
+    {
+      "path": "data/structure-check-v07.json",
+      "bytes": 13065,
+      "sha256": "6e4ffea7715e4f666ee7e2c4f0050c57f07bd4f82fc95f34587a7182bd303794"
+    },
+    {
+      "path": "data/wifi-quad-layout.json",
+      "bytes": 3210,
+      "sha256": "c976afd721e5fb8e27a216774a9270575ea1582644fdb649a0678a483f7f16f1"
+    },
+    {
+      "path": "docs/ASSEMBLY.txt",
+      "bytes": 4161,
+      "sha256": "a8141d9760b29d8fb197effda7397ff8e7bc5fbdc02f2f52ff99e15469f23911"
+    },
+    {
+      "path": "docs/quad-v07-structure-and-programming.pdf",
+      "bytes": 2625232,
+      "sha256": "6ec1521676b010625f3095f3fe4ebaecc6dc7b85cbaca996c25c854f43fd2b05"
+    },
+    {
+      "path": "docs/RELEASE-NOTES.md",
+      "bytes": 723,
+      "sha256": "5455fd8cefe60d8babb654522f623141fbfa0ea3732f3701561e68e8e042bf4b"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 879,
+      "sha256": "04c4d373d34b0113574f1719cd8d36eda20fa51111cd4cd709f35c015292dc9f"
+    },
+    {
+      "path": "procurement/price-check-2026-11-21.json",
+      "bytes": 3116,
+      "sha256": "1b0fe6a52d4c4de3d84b3591d57f9e2400f917859d49280a50e259d75ce69ba7"
+    },
+    {
+      "path": "procurement/README.md",
+      "bytes": 1442,
+      "sha256": "7dfa4217e5335ced04349ab009e56e258e8fa64f4d93228dc5d4adb49a7373e8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5463,
+      "sha256": "1f9d8c744ef5e1a79bb9bc0461de30821ab00577258d34d651c8e70da80f979b"
+    },
+    {
+      "path": "software/esp_drone_client.py",
+      "bytes": 4708,
+      "sha256": "160c5c7384e96839b5a5afe4eff27aa53d59cb219889dc3a69e50c346cc6af4a"
+    },
+    {
+      "path": "software/programming/build-reference.ps1",
+      "bytes": 1428,
+      "sha256": "9a576ae380342803b0e9483b148756463b9259cf2463d1bdcead27c5279463d7"
+    },
+    {
+      "path": "software/programming/esp-drone-source-9d5a4f8.zip",
+      "bytes": 1509856,
+      "sha256": "890caa12625d895eecb0550c49fca613fdfc4c5b0b031b7a25eb6160eda9f4ce"
+    },
+    {
+      "path": "software/programming/PROGRAMMING.txt",
+      "bytes": 3258,
+      "sha256": "44bf9e3cb8a0232a1c85e61dd89d474524c234ac6c6514866e831008669cbda6"
+    },
+    {
+      "path": "software/programming/UPSTREAM-LICENSE-GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "software/programming/upstream-source-manifest.json",
+      "bytes": 83350,
+      "sha256": "269aed0a9d469a2152cd65094b8dbbdea9da1467ad65bc4a04682f44cd320950"
+    },
+    {
+      "path": "tests/test_esp_drone_client.py",
+      "bytes": 2425,
+      "sha256": "ce8056f230f2dc7a4db138f61e81dd87417a5b955b8dd38d0215dccb29e697ba"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1316,
+      "sha256": "1cf2d80a4804cb88e6abdebef82fecc9e1873b5c10a32df5d75f080321327817"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "bytes": 5095,
+      "sha256": "69d8369ed56d15e96ce488836c97d4d2582cd2765a8856dcb260cead49036e4e"
+    }
+  ],
+  "scope": "V0.7 public structural prototype; no physical flight verification.",
+  "excludes": [
+    "manifest-v0.7.0.json",
+    ".git/",
+    "__pycache__/",
+    "*.pyc",
+    "local credentials and work logs"
+  ]
+}

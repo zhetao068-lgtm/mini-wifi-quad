@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-21",
+  "board": "ESP32-S2-Drone V1.2 only",
+  "pins": {
+    "MOTOR01_PIN": 5,
+    "MOTOR02_PIN": 6,
+    "MOTOR03_PIN": 3,
+    "MOTOR04_PIN": 4,
+    "I2C0_PIN_SDA": 11,
+    "I2C0_PIN_SCL": 10,
+    "MPU_PIN_INT": 12
+  },
+  "upstream_commit": "9d5a4f85199ea056f40472b2248e10dcb6988b5c",
+  "udp": {
+    "ip": "192.168.43.42",
+    "port": 2390,
+    "checksum": "sum(header+payload) mod 256"
+  },
+  "source_checked": true,
+  "white_label_compatible": false,
+  "camera_stream_implemented": false,
+  "firmware_compiled": false,
+  "hardware_flight_validated": false
+}

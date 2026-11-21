@@ -1,0 +1,57 @@
+ESP-Drone编程参考 - 2026-11-21
+
+适用范围
+本目录针对Espressif官方ESP32-S2-Drone V1.2参考板及其固定版本源码。
+不适用于未知白牌E88飞控。购买“ESP32”或“MPU6050”几个模块，并不等于已有
+完整飞控板、四路电机驱动、匹配电源和可用的飞行固件。
+V0.7机械机座按20.4 mm参考电机舱设计；官方716/720裸电机不直接匹配这个孔。
+采用官方飞控路线时，必须按实际电机、驱动、电压、主板外形重新定结构接口。
+
+本次已提供
+1. 未修改的官方飞控源码快照，固定commit：
+   9d5a4f85199ea056f40472b2248e10dcb6988b5c
+2. 原始GPL-3.0许可证和源码文件哈希清单。
+3. ESP32-S2的构建脚本，仅构建，不自动烧录。
+4. 上一级目录esp_drone_client.py：Python 3控制/控制台数据示例。
+   已做协议、校验、边界和真实本机UDP回环测试；未连接实机。
+
+官方资料
+源码：https://github.com/espressif/esp-drone/tree/9d5a4f85199ea056f40472b2248e10dcb6988b5c
+入门：https://docs.espressif.com/projects/espressif-esp-drone/en/latest/gettingstarted.html
+硬件：https://docs.espressif.com/projects/espressif-esp-drone/en/latest/hardware.html
+所固定README声明支持ESP-IDF release/v5.5及release/v6.1。本参考选择release/v5.5。
+
+构建
+先按Espressif文档安装并打开ESP-IDF release/v5.5的PowerShell环境。
+在本目录执行：
+  .\build-reference.ps1
+脚本会解压源码、选择esp32s2、禁用启动电机自检并构建。不会选择串口或烧录。
+脚本以官方默认板型为起点。实际板型、传感器、驱动和电机类型需在
+idf.py menuconfig中核对。脚本未在本机完成固件编译，不附带声称可飞的bin。
+
+Python示例
+在上一级目录，先离线查看数据包，不会联网：
+  python esp_drone_client.py
+连接到已匹配的ESP-Drone网络后，收控制台/CRTP数据的零油门示例：
+  python esp_drone_client.py --send --thrust 0 --listen 3
+示例默认目的地址192.168.43.42，UDP端口2390，来自固定版本wifi_esp32.c。
+实际固件配置改变地址后，使用--host/--port显式指定。
+--roll/--pitch单位度，--yaw为默认速率模式下的度每秒。
+--thrust为0..60000原始控制值，既不是百分比，也不是克力。
+本示例针对Stabilize/RPYT控制，不提供自动起飞、航点或返航程序。
+发送前按官方流程完成传感器、旋向和拆桨台架检查。
+
+已核实的官方板内信号
+MPU6050 SDA=GPIO11，SCL=GPIO10，INT=GPIO12。
+电机驱动控制：M1=GPIO5，M2=GPIO6，M3=GPIO3，M4=GPIO4。
+电机接板载驱动输出端，不能把电机直接接GPIO。
+电池检测GPIO2读取VBAT/2网络，不是把电池直接接到ADC引脚。
+
+图传范围
+本Python程序不含视频功能。白牌预算路线保留原配摄像头、供电和App。
+官方板有摄像头引脚资料，并不能据此断言所选固件和摄像头已经能回传。
+ESP路线的视频模块、驱动、网络共享和功耗尚未落实，不列为已完成能力。
+
+验证边界
+本机没有完成ESP-IDF固件构建、刷机、传感器校准、实机图传或试飞。
+program-check-v07.json只记录主机程序的7项测试，不能代替这些验证。

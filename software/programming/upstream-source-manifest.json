@@ -1,0 +1,2207 @@
+{
+  "date": "2026-11-21",
+  "repository": "https://github.com/espressif/esp-drone",
+  "commit": "9d5a4f85199ea056f40472b2248e10dcb6988b5c",
+  "license": "GPL-3.0",
+  "unmodified_source": true,
+  "excluded_from_archive": [
+    "docs/",
+    "hardware/",
+    ".github/"
+  ],
+  "contents_note": "Build sources and upstream root files retained. ESP-IDF and managed dependencies are separate.",
+  "firmware_compiled_here": false,
+  "hardware_tested_here": false,
+  "files": [
+    {
+      "file": ".build-test-rules.yml",
+      "sha256": "2daf09035bce6ec85515c7f1d38cc3da8416b473c6c5411565a63af4d71d1290",
+      "bytes": 77
+    },
+    {
+      "file": ".codespellrc",
+      "sha256": "1ec324831c52e7d9be6a21af1836ebefd4043e04856740968ab6457b89dc7b3a",
+      "bytes": 62
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "4d83f74440218c8eea3b6f2f6301d965e9e6a50363d542c18332dbe3346f5427",
+      "bytes": 362
+    },
+    {
+      "file": ".gitlab-ci.yml",
+      "sha256": "5de34fbeb20b58984e084fee8387229b27629c716342e766313f2ce265ca32ea",
+      "bytes": 2753
+    },
+    {
+      "file": ".idf_build_apps.toml",
+      "sha256": "abc23d1ddad7a04ded3d1c17e97fa0cba7e3caf301a6bbb97c5745095cb3c552",
+      "bytes": 117
+    },
+    {
+      "file": ".pre-commit-config.yaml",
+      "sha256": "f3905bac8f9f1553ec129638d8526ceb39bc00557ba3a4acf162c0e88b5c1da8",
+      "bytes": 193
+    },
+    {
+      "file": "CMakeLists.txt",
+      "sha256": "2dd791ef34daf644b40a62a84e2094a509c2b79c2423f2b613664e209dc3388a",
+      "bytes": 1700
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "file": "README.md",
+      "sha256": "87b01eb464e614b521263d0d6edf932898f46c05669e9fb32fa2fa321e0ed5b8",
+      "bytes": 2849
+    },
+    {
+      "file": "README_cn.md",
+      "sha256": "e88b554412a4f64803a05627f78ea0d7c7554ef3aead5404f6a22a707368f1ce",
+      "bytes": 2684
+    },
+    {
+      "file": "components/config/CMakeLists.txt",
+      "sha256": "3632be8ab3d09930b6cfac95227d594fbde3b6c8cd6425aac047f1a4259c5f00",
+      "bytes": 74
+    },
+    {
+      "file": "components/config/include/config.h",
+      "sha256": "b0ce2b8990dd47b2ab2a9e8aa1ad37bb295c06480266df2b00232ec93ecf492f",
+      "bytes": 8429
+    },
+    {
+      "file": "components/config/include/nvicconf.h",
+      "sha256": "11800c990bac17983a12feeda3786c02d235348c97243b98f4dc385ea2c6160a",
+      "bytes": 2958
+    },
+    {
+      "file": "components/core/crazyflie/CMakeLists.txt",
+      "sha256": "7a7d95b2f2a96ec0498bae22554f83fe6f348cddfb2290c6c237effbfa5811ed",
+      "bytes": 4972
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/amg8833.h",
+      "sha256": "68d6772b2bf78b294dda19aa0fb93b74defb53581d571acfa1f0447c6adb705f",
+      "bytes": 4228
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/buzzer.h",
+      "sha256": "aaaea1b3f4e165931e5d2b8f535d7ce90b6db2d414716bc7adfe2b37e88f8525",
+      "bytes": 1652
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/eskylink.h",
+      "sha256": "03d456a157a0d2242c17732db7278f92e2664a34641a24bd74df98092e151d16",
+      "bytes": 1186
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/espnow_ctrl.h",
+      "sha256": "e058789251bde13e6499172939362c29a9a825ac141aa49d204ac9059f616f62",
+      "bytes": 8710
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/freeRTOSdebug.h",
+      "sha256": "be756df9f21a35a85b71a952753514f986bc5d9f0707faf045e7b51686992c9a",
+      "bytes": 1364
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/imu.h",
+      "sha256": "5ab1b13345214dd8d173fea4dad487e53bad8272fd9b92fbf0d0000930b3c765",
+      "bytes": 2118
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/imu_types.h",
+      "sha256": "c2aef811602a33a6df7e9b704155ca830df76a0faf7dc319006a2991c1c0f952",
+      "bytes": 1559
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/ledseq.h",
+      "sha256": "dd5973c98ae2f30c501ca17e2e375b2eeec16aac255fee4f8ac517fd59d6ffc7",
+      "bytes": 4264
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/ow.h",
+      "sha256": "c0f400d7c64801ab6b3877fbc2f9a6c172b17d84ae7839e9cbdc068390ec5b99",
+      "bytes": 2114
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/pca9555.h",
+      "sha256": "d7d0efaa2a60524723029f7858767a5ab850ec277dccd6dceaec8be1f2f95a9f",
+      "bytes": 2384
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/pca95x4.h",
+      "sha256": "29233d4ead05d31b609a130204e15d0dccaf1746a351667bde6cce0abc1469a6",
+      "bytes": 1852
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/pm.h",
+      "sha256": "02799c31213006096817e3f2a09cffbba3bd9297ebb4f6e9545d5fe8022dceec",
+      "bytes": 4278
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/pm_esplane.h",
+      "sha256": "439089a72f8d95d1570400fa01342237a5fde375dc003b21955fdfd9e516a011",
+      "bytes": 4480
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/proximity.h",
+      "sha256": "643ce48123a14f0b43a8e9fa9234dfcf3c7e806825f0f98ae6561806eaa2c5e3",
+      "bytes": 2129
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/radiolink.h",
+      "sha256": "cc5e4c4520f04d4520e9f8c4e96d99748f9cdf887fdeec526dcc2f5e46d50eff",
+      "bytes": 2027
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors.h",
+      "sha256": "874b72017ff61d85a939ff53589995acd06546c3faf01ecde080f244c792aa16",
+      "bytes": 1733
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors_bmi088_bmp388.h",
+      "sha256": "2e577d64c17891a03bd6ef2e29e4c0e1e3a033c52961b52493d20f5a98e7991f",
+      "bytes": 1635
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors_bmi088_spi_bmp388.h",
+      "sha256": "711e95ea4dcb014e6a8ef76c72e1e637da7cb91d8a2f115c07dfc01857b31542",
+      "bytes": 1680
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors_bosch.h",
+      "sha256": "fd661da91e3c595d8a1547d9896f2ad44adee439a86174aa4d1707a77314ac81",
+      "bytes": 1574
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors_mpu6050_hm5883L_ms5611.h",
+      "sha256": "78cf6cc72823d11b50f892c670515a5532854ecffc0680ed0effb28af2114f58",
+      "bytes": 1729
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/sensors_mpu9250_lps25h.h",
+      "sha256": "7683bff9cfcdb524abba1f776fbab3c7a8d1510425cfbcb70c3c3aff08a113c2",
+      "bytes": 1596
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/storage.h",
+      "sha256": "cd1293d3d4d593284a82d89b1f6150579c123580ed237465d613052d1ba59e94",
+      "bytes": 2806
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/syslink.h",
+      "sha256": "f6cb4b1122a92689e6b1540eddccd48b7a675c2174a8c8af782dbd7cbb2793b5",
+      "bytes": 2550
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/transport.h",
+      "sha256": "685e1e9b7e542425cfac8c105361daa962cf18be462b33dea7e73d134237cf3e",
+      "bytes": 510
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usb.h",
+      "sha256": "ca9f2f5ce7ad540735b2677205218db8e0621a3d14d4eb86a180ef124d617a3d",
+      "bytes": 2179
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usb_conf.h",
+      "sha256": "ef44d19b46f8e8d98c4baf98e63d9e71993a6d7c331e31b4d39507d6383d3f53",
+      "bytes": 10782
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usbd_conf.h",
+      "sha256": "023254c7ee28797df67982b800066ce6710e005e7cf406df568c7734e83dbf52",
+      "bytes": 3371
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usbd_desc.h",
+      "sha256": "655179e997e2d93810df1f73e8ff78bcd1c0adbad889a06f07d4b92cd37cda0d",
+      "bytes": 3434
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usblink.h",
+      "sha256": "a5e036d7be2b723dbc2de3fd03fe074b719d93522a47085f89e62a9be5254de1",
+      "bytes": 2008
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/usec_time.h",
+      "sha256": "239d36bad7516876995720f6ead52cd9225d31c2141b129f000d490642e2e111",
+      "bytes": 1254
+    },
+    {
+      "file": "components/core/crazyflie/hal/interface/wifilink.h",
+      "sha256": "079b58d659fada375dcb3651346b7d4f9c408bf0bacfc46b6d1eb7d7ee124465",
+      "bytes": 2055
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/amg8833.c",
+      "sha256": "03afccbb3a128944abebb24b4b3ce18c8f9f81a330e8aba70862095ad3f0e283",
+      "bytes": 11334
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/buzzer.c",
+      "sha256": "8248d16d4a46c222142e9b9dfe2d72a847c373d020ffd1f00e7e804b27710f41",
+      "bytes": 1521
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/espnow_ctrl.c",
+      "sha256": "b25128a5f3a6491991f566571ba2032b171a7c2aaa82a3ce8750f0909c9fe556",
+      "bytes": 19728
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/freeRTOSdebug.c",
+      "sha256": "92db0de9276f11c848a8680b24d80a28f14f23f3882f248cc022e9c85b72a598",
+      "bytes": 3172
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/ledseq.c",
+      "sha256": "cce0fe67eeb1854aeeed4d4f4f725e10eac64074caff6632f2e9ba829b405be2",
+      "bytes": 9705
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/ow_common.c",
+      "sha256": "6d7f611611e10f16f00b81e8ed78c42d17ec5aae22a5f7208fa7bc912fe8a0ea",
+      "bytes": 2489
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/ow_none.c",
+      "sha256": "94cf9df54b9eadfa11e3be2dfe66ab0653086ab94f8c0b2b2e261e0d255438d4",
+      "bytes": 1524
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/ow_syslink.c",
+      "sha256": "ceb46563d98bf7a25a7bfccdd9acb898af5f8020af22accc97b7419c30e3b957",
+      "bytes": 7188
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/pca9555.c",
+      "sha256": "e7208bc1d3cfe42ca0ef93438f58cb794f18ac19a7d7fe70e2ada5943b230847",
+      "bytes": 2812
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/pca95x4.c",
+      "sha256": "f182bbb98945e9c75d9181de036c367a19af5b0dfe92468c4e6f2814ea0e2a09",
+      "bytes": 2014
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/pm_esplane.c",
+      "sha256": "cc299be291120f6662322a7b76912f957cd88cf3cda3683132dede941214b536",
+      "bytes": 10279
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/pm_stm32f4.c",
+      "sha256": "904e05b8866847977048ffea99db5fd174547f074342d0b7450152994bae9653",
+      "bytes": 9254
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/proximity.c",
+      "sha256": "5f9297cb83a8e3d3f1e4d73ee19e101f2d01159e88d9c4e0f6dd841adb7aca77",
+      "bytes": 7033
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/radiolink.c",
+      "sha256": "080f3db7578e0d08e06d1e7493d8bcf9e5fbff4e521534c8e44350b58b5c513e",
+      "bytes": 6137
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors.c",
+      "sha256": "f1f7b9204956d6ef512aa56be280881659d83f7b7988404b68c074ccfb6c1fea",
+      "bytes": 7845
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors_bmi088_bmp388.c",
+      "sha256": "955cf0da284106818ae8f8289fbe1a37fdccf204103b50abc05dc73d4161ebc4",
+      "bytes": 27923
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors_bmi088_spi_bmp388.c",
+      "sha256": "16c38475bfd3c9509eed646388f6624673e4282e0af8db71370e136a8bc566ef",
+      "bytes": 38937
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors_bosch.c",
+      "sha256": "0a5d49e73e1cec9a303a857e7a4742d3872100b28843d3220ae7b01bd4e32b09",
+      "bytes": 29792
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors_mpu6050_hm5883L_ms5611.c",
+      "sha256": "52f4988b71a9a7f9319fc52fa9eec2498473b924f6c182790cb5519a2295f08e",
+      "bytes": 35750
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/sensors_mpu9250_lps25h.c",
+      "sha256": "a8bc0db4309f87f88fe2d6a183d45c6c0ffa29b9ef6ed8adc11ec01bbc38e4f3",
+      "bytes": 29187
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/storage.c",
+      "sha256": "eb0cb652bb7877456ad62c068bee98afbd81f1cb1cf658057eb5dfe7baaf5d7f",
+      "bytes": 3862
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/syslink.c",
+      "sha256": "189ac0ea49c8f3ea122b7d548bf3799a303c757ae70ebe0a419b06e0b7fddac6",
+      "bytes": 4202
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/transport.c",
+      "sha256": "20b77aa38ca633147af6d5e04edc08fd746825a39b82e977f0d965dce8dbfeb2",
+      "bytes": 1688
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/usb.c",
+      "sha256": "4c17546a42dc93a2008266344e3d1182a84e9b7e85e9390fdf21c326d31b8879",
+      "bytes": 10375
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/usb_bsp.c",
+      "sha256": "992bfe3fe285abb0b1845666160108f1eff2e44bbef576297c7c3ed806554e75",
+      "bytes": 9236
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/usbd_desc.c",
+      "sha256": "f7f3e3ad09be4c05f4f2b66e943095943ce51465494e79513694365568f5c87a",
+      "bytes": 8618
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/usblink.c",
+      "sha256": "b4cb8128929931c6401c450e84a5a111b96734b669df70fda66fa0929aa80f73",
+      "bytes": 3472
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/usec_time.c",
+      "sha256": "6e252c1af4d24ea4132ecce79572d969c7cd22cb5634f72d090a82cb826ac2e7",
+      "bytes": 1217
+    },
+    {
+      "file": "components/core/crazyflie/hal/src/wifilink.c",
+      "sha256": "72a4d87e090bb0ce255891427efb5f9ba37de3ad758855af5528f10f031926c5",
+      "bytes": 6177
+    },
+    {
+      "file": "components/core/crazyflie/idf_component.yml",
+      "sha256": "b1e80caf527b8a283abb37a0c7abcb83a34e49ad07adb9c5a4bfc41b0b0a3162",
+      "bytes": 120
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/app.h",
+      "sha256": "38d829dc31d12bddfc6e790adb9fc8e04a360392cfb76915d89deb2e53c2979c",
+      "bytes": 1374
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/app_channel.h",
+      "sha256": "f997f2db78d519e60676fbe6d0831c9f4cf97dbcd753c4c47e902ab0dd3ff876",
+      "bytes": 3471
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/attitude_controller.h",
+      "sha256": "cf1e00688c016411cbaf69b168424bd235197abbca35966a3da8df478648a6f2",
+      "bytes": 2452
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/collision_avoidance.h",
+      "sha256": "4a2341e245bb8065a76d9f988d162eff1b4cd9d3cf7e0591418f39b70d911c34",
+      "bytes": 5805
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/comm.h",
+      "sha256": "23934552fa56dc9d3082079dfc77444c0ee06312714d58a19a89597d6cf6c372",
+      "bytes": 1097
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/commander.h",
+      "sha256": "f8a7049ff9b46f1685a81a1b18be93a74ea27a63a89c0b106df2e00d261103de",
+      "bytes": 1950
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/console.h",
+      "sha256": "0482e35ad9635acf5b39d641a086942af99d5c8aa219b7fd5289794b2a32773c",
+      "bytes": 2231
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/controller.h",
+      "sha256": "66161adf244fe8d7e41e787988e799552e7eabe4f75f709f7dd1fd7cc9fa2c05",
+      "bytes": 1622
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/controller_indi.h",
+      "sha256": "1dfbbbf4e0e0d162b0be8bc1e47e8de50f3604f1403fd6751f26715d570e9719",
+      "bytes": 3218
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/controller_mellinger.h",
+      "sha256": "4663a6c5ae56ce69e29a13605d5ded3cbb411ff049ecf9e00503247977d961d9",
+      "bytes": 1456
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/controller_pid.h",
+      "sha256": "919e3e1401dd433ebd228c9ec5b8777f7e1691b8b9ff7c58a085c3450ccb601f",
+      "bytes": 1408
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/crtp.h",
+      "sha256": "22441c7cbd5254eb281d33777406ff38a7edc6cd2c1792ac11f6e1e22fca8757",
+      "bytes": 5129
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/crtp_commander.h",
+      "sha256": "04b6709ced9ea472fe5856a1948c83cca35959066ad1858958efc7af67eae299",
+      "bytes": 1486
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/crtp_commander_high_level.h",
+      "sha256": "e316ae642aaa134283559f18dc251851fa03bc7271238b5c3ca04405edb75dc9",
+      "bytes": 9353
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/crtp_localization_service.h",
+      "sha256": "67ce531267e8fa8ce6c206e1bc52d829783eff49476f9102180effcce8478da3",
+      "bytes": 2087
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/crtpservice.h",
+      "sha256": "8b559308c3cc27d1a9821250469c66229e852e3e46066905efc8a1cefc9804cc",
+      "bytes": 1199
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/estimator.h",
+      "sha256": "0cc1dfb8d9b2ebd904443a5c29c4aea2ccb25c89930e6004b4aedcc0e5a62a5c",
+      "bytes": 2310
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/estimator_complementary.h",
+      "sha256": "f8b7b1254080c65b78389d3fac38b821a27a7f669c54803bd87812b682fcdd81",
+      "bytes": 1393
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/estimator_kalman.h",
+      "sha256": "99cac585555723f7bcf1bef2ea8edd0e4b1ad1dfdfdc6c91d0e097c29909141d",
+      "bytes": 3617
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/extrx.h",
+      "sha256": "f3185a910cdaa21ff74b858d3e269d1e314e91e19eeed91a7ce69feea9d81d92",
+      "bytes": 1027
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/info.h",
+      "sha256": "32ea2760e3c1bd8f75f872d733bc2cbbb5efdb11e2c6a6507d0c0f53315d81dd",
+      "bytes": 1278
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/kalman_core.h",
+      "sha256": "df49b8517c9f792284e8859d3178486ef633c709d48ccebb0d227f0c63031699",
+      "bytes": 5819
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/kalman_supervisor.h",
+      "sha256": "df77dc05ed1da9ae371c94d9ab031b7f4f2867333a4bbb80dd47aad22ca81072",
+      "bytes": 1156
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/lighthouse/lighthouse_core.h",
+      "sha256": "01e4888cf5b35e51ea0b3ac2ee5c6cdf632f5dc6685c80401b1dde08d9fd00e5",
+      "bytes": 2056
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/lighthouse/lighthouse_deck_flasher.h",
+      "sha256": "ea36197696f87ed0153c9ab5cf08a3387305b52f8fefa01a49e5f10b18b04864",
+      "bytes": 1092
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/lighthouse/lighthouse_position_est.h",
+      "sha256": "7f7b08b5f052ac5bdd126f5ffe21f1d2a1ae9db5a92f298b8e816917c68eda21",
+      "bytes": 1651
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/log.h",
+      "sha256": "50b56c7eb1f6cc623dd64844bc4bd409e84c53fbd7c32be101d9bb558abab88d",
+      "bytes": 5720
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/math3d.h",
+      "sha256": "29d0722ab6534f766ced7e58b4848773f141220bd7e89849a1827125634290c5",
+      "bytes": 30903
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/mem.h",
+      "sha256": "c1e0ddcc2eece6c42cc9ac5d1cc11d6aeb4c9d8e9c633316144cde89b1b9199a",
+      "bytes": 2198
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/msp.h",
+      "sha256": "21fe6b78a7ac74da594c3ca5ece194fa4eb97c3781c2cdccbfb7fca8d30014cd",
+      "bytes": 3041
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/outlierFilter.h",
+      "sha256": "8d2249b1e7629cd0db799310e8a660b78651a2f2b5be4ba892bb39b8837f0348",
+      "bytes": 1601
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/param.h",
+      "sha256": "0beffa5604d8624de05d11eee3ce582ae358a3bba81548183dacbf3a3aa57efd",
+      "bytes": 5762
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/peer_localization.h",
+      "sha256": "f496e59cad1a0e483d37b1678f966e1456cfef63349f9f8690ec1f10ab24d585",
+      "bytes": 1804
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/pid.h",
+      "sha256": "b94d4e867e4483b2741b75ea9aa4f0db0d6016fac5bf00804016bf6c1d1e2783",
+      "bytes": 6776
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/planner.h",
+      "sha256": "63642b0206b6befd1e3a12763606a0cd1312488ce652a121e835ebe49ad399e6",
+      "bytes": 3981
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/platformservice.h",
+      "sha256": "296196da2c324ebcf8a955e5f714282af304eee8753b4ccf1661b0a3735f2ec1",
+      "bytes": 1313
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/position_controller.h",
+      "sha256": "e44c6761b2596a2c8afc9d5f5237732101541c5b70d4a273ae368b6746e31f2a",
+      "bytes": 1552
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/position_controller_indi.h",
+      "sha256": "033f387300aae0b1d1d630a169a85f2f700d1ce699b284ae4fc34a21238f6e3e",
+      "bytes": 2677
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/position_estimator.h",
+      "sha256": "4b00a38839136d661055536616823fe55cb35ddc510058cdb2683ce05a38e56f",
+      "bytes": 1240
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/power_distribution.h",
+      "sha256": "9b7a3c1f7587de06958b533b581dfd355ad84c48aef5fe1bf11c30ad2f986fdc",
+      "bytes": 1262
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/pptraj.h",
+      "sha256": "8b2cc98f4cd514763c6ddf4d1ff5cc7754c993d7a2b4a92dffe7fcb1f62cd83f",
+      "bytes": 5677
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/pptraj_compressed.h",
+      "sha256": "50923df6de99aa85b1a456c4fbf6e0a878d44f8465ced575781ec37780843a8e",
+      "bytes": 2829
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/quatcompress.h",
+      "sha256": "ca3a0cd545b697bae48d486303269b584b0fca183b9741da72a8050e529ed4c5",
+      "bytes": 2635
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/queuemonitor.h",
+      "sha256": "292f355e1f50ca8eddf3ebb825c046badc838549c3136ede0aa93f619f168691",
+      "bytes": 1474
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/range.h",
+      "sha256": "86c745adb2382ff3381d3c32cf0decb2a29c75bf2b851371c2b122218da9beb7",
+      "bytes": 1982
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/sensfusion6.h",
+      "sha256": "76b30eaafb4db9560f71821d6080a4fa21839d939a635924e0d91a8fb89cb605",
+      "bytes": 1478
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/sitaw.h",
+      "sha256": "1c748203e2243bca7eab51a4f46f989c38ac899ac1671d4b5e570595f1256dee",
+      "bytes": 3941
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/sound.h",
+      "sha256": "c3194aa35eafdd1248d6198d4b3395b9c6e9041a50a9f6f527caf587b7ef9b53",
+      "bytes": 1696
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/stabilizer.h",
+      "sha256": "46d20f7e7f0578daeb8c29d339f7f4d5354dafcd81c80362e2eaf89cea863da6",
+      "bytes": 1995
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/stabilizer_types.h",
+      "sha256": "55c81052b42aa749bed3d26ce7da7fc36f9673c9af61d5ca10a1d00f8263b5ec",
+      "bytes": 6735
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/static_mem.h",
+      "sha256": "aa2e3f0b72f269c68cf44d08bfe7bb48a72005077f1b6f62b1325da9a3bb9b25",
+      "bytes": 8221
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/sysload.h",
+      "sha256": "efbfb297bef889ad8d9acd11b63e373b29bea7f82cba0810f1ab5fdbfe4059b4",
+      "bytes": 72
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/system.h",
+      "sha256": "9e30decc06600d65931fe198a4069a278e8aa73b5ac79292810508042072b427",
+      "bytes": 1334
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/tdoaEngineInstance.h",
+      "sha256": "4e26f1ab2834bce137692b783500aba944719adbac10b655f6a5d8bc8b5cd485",
+      "bytes": 1085
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/trigger.h",
+      "sha256": "6173b32f08c6c919c25a7a2f52168e7eb123ca96f0cc2e023d0603325b3786bc",
+      "bytes": 3102
+    },
+    {
+      "file": "components/core/crazyflie/modules/interface/worker.h",
+      "sha256": "6f3b80578ddec18361c83ab95137aa0088c4a983ecb4646ed49807e254941e8c",
+      "bytes": 1763
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/app_channel.c",
+      "sha256": "90f3aada797b634b09bd1da89ddc6de5b33912e51aa09debbb69b80cee002a69",
+      "bytes": 2579
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/app_handler.c",
+      "sha256": "3bbaa4c1331753b1753fb519f25c28a4fc1baf63fa03cac6c91dfe4ae7adc354",
+      "bytes": 1656
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/attitude_pid_controller.c",
+      "sha256": "3bcfc06bf10441a4749ff73e126bf96a60c3da2bd2da57dee36e443cf88bffa8",
+      "bytes": 7204
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/collision_avoidance.c",
+      "sha256": "2908fdaa280ad5bbaa3139d132939b65c50c587327e35ee5dab103c4a5efea05",
+      "bytes": 13396
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/comm.c",
+      "sha256": "5795850f4089a60833a54970c1a75a600025d309a07d11525893bce0d23bb2f1",
+      "bytes": 2366
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/commander.c",
+      "sha256": "ff4b0c0c00fccb72983ed211b6a73fa4d0ea8b002654260caf097d0cff40b39e",
+      "bytes": 4738
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/console.c",
+      "sha256": "e164a9257c2c07815ef387bdbbcac0c7f4f10bc57aae212ae2a64f2b29e709db",
+      "bytes": 4409
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/controller.c",
+      "sha256": "c4ad51f8656aff9e08bb3bbb00ac6b8ed482c39bb2d879f4b3904af3d8b3345d",
+      "bytes": 2124
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/controller_indi.c",
+      "sha256": "555598421e59d49f83f9609dcc90ab6711efbc019f1521d9bad0f26092cbdbc0",
+      "bytes": 14024
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/controller_mellinger.c",
+      "sha256": "bcfdfce4d2c70e37e11804c7922932a52ea422759b97e55ab1a5cee11d57bcb3",
+      "bytes": 12996
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/controller_pid.c",
+      "sha256": "01ec9a5dc963d15664ac0e0e8af01d39f3e187a0bd5627425f9b80b1b051e587",
+      "bytes": 5227
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp.c",
+      "sha256": "2eb95807651db1afbaa73424b853cc3c9f823b4b2c6cd051e5685c83337a0a7c",
+      "bytes": 6125
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp_commander.c",
+      "sha256": "e783c735b2259cd1bf7dd988f8a21bbbd1c7506780619a0902407047b7b98f70",
+      "bytes": 4173
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp_commander_generic.c",
+      "sha256": "53da7ac48719405a2d901dc5e25d8b0868cb5de010c12b1b10ac444b629f1683",
+      "bytes": 13420
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp_commander_high_level.c",
+      "sha256": "fdc680e6699b46120d84fb4e7d34248fcb3d13ef85366469db9eed26cb057dc3",
+      "bytes": 25791
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp_commander_rpyt.c",
+      "sha256": "b5e6dad084d22e193f2a878293e0c619efa7d133a56b67fafa61a7c52a62a7c7",
+      "bytes": 7597
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtp_localization_service.c",
+      "sha256": "b3925dece23573206b1f0a168bd6de81fa585fffb78df59b4fd1a515ca6ab1f4",
+      "bytes": 10606
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/crtpservice.c",
+      "sha256": "52297f704654fdb37b1db513efffff377685f5e3202ad30433a863f67fe0bf2e",
+      "bytes": 1910
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/estimator.c",
+      "sha256": "9911d2d91a32450ad5d7f30ba6b487d42c65b9a37f181f34e5c60677a2fc711e",
+      "bytes": 7794
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/estimator_complementary.c",
+      "sha256": "8334fe0a3924403ee1c92b31881e9c4b912662157f041d36f4db3a0e50a9825c",
+      "bytes": 4175
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/estimator_kalman.c",
+      "sha256": "2f12caaa74abc4e9076f5c25f4313a786b7df2c959c8b5a887c0199ed1193693",
+      "bytes": 24321
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/extrx.c",
+      "sha256": "480bd6a64615a7821bbd3b1b2aa34439d21bdd0baa3e7af52de732c1b9bc6636",
+      "bytes": 5596
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/info.c",
+      "sha256": "8e884b238520604fdb62ba9a02a168b415c85768eacf58562ad2f2ce02a5efe5",
+      "bytes": 4382
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/kalman_core.c",
+      "sha256": "d7c6fb39116d7551b9e35a1fd5eccf758673ba62656209fa68d8ddd7ff329723",
+      "bytes": 44689
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/kalman_supervisor.c",
+      "sha256": "d6f16f8751ed5b217304c76a8ce397e192f247b05d5dfbb7a7fb5426383b4048",
+      "bytes": 1891
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/lighthouse/lighthouse_core.c",
+      "sha256": "f607115633e98f5cce217f07d9cf9c9cb1ea97b3c76e5a32af3386d95c9ca761",
+      "bytes": 19718
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/lighthouse/lighthouse_deck_flasher.c",
+      "sha256": "7a5d405bb31c5e7ac1fa624bbf77ac02e1449080b2aa747815490e77fc586a36",
+      "bytes": 4328
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/lighthouse/lighthouse_position_est.c",
+      "sha256": "8ec4869e508e50b5565688310220dbb806b4a884c20bba0cb60cddc36bb34a10",
+      "bytes": 17254
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/lighthouse/lighthouse_state.h",
+      "sha256": "e9cea89791e50bce6c1a04dde951fea06167df5ec37013627e9ffa88b1825082",
+      "bytes": 1095
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/log.c",
+      "sha256": "5fef1a066b17ddb64e819f3614dbec5fbb5307a38a89b035ed1d1a0502e14535",
+      "bytes": 26738
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/mem.c",
+      "sha256": "81df1e4b3b9b516a36e9886cffa95f22e5adfaf27df908fb2484c6510b0d8c4e",
+      "bytes": 9872
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/msp.c",
+      "sha256": "ddd18ab915993d8ea203712e67f3887c677fa8ba72673cc4daf947ae969a2a82",
+      "bytes": 11745
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/outlierFilter.c",
+      "sha256": "1c5211aab3df9dea0332c0faea8c3e2e1f503a4624d8322b030fdea5376ba41e",
+      "bytes": 6114
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/param.c",
+      "sha256": "50e6dd5a04522549bed7d31e52fb68502461c6b4dcc35e8eb8ca0fe134d60cdd",
+      "bytes": 18566
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/peer_localization.c",
+      "sha256": "a03db795ca98c5a22cab2c236476517dd0964e2309df919534b6c352d09d01a1",
+      "bytes": 1651
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/pid.c",
+      "sha256": "439c64b134b19698a02b44260e2acf6edca8ad944287126bd15c7288c3365fd8",
+      "bytes": 3714
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/planner.c",
+      "sha256": "478bef08ba49ad59f127b0120aaa92282854fd60f9faf7da469839bfc16921a4",
+      "bytes": 6090
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/platformservice.c",
+      "sha256": "9a34c4f5c1acfeb40dbf5772ff44ccb1854fbc672278faf756b1575a55757bf2",
+      "bytes": 3634
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/position_controller_indi.c",
+      "sha256": "581beccd2a7903e916c8bcf4e7332500663b1bb65786295992dc6b335bfba6a8",
+      "bytes": 14179
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/position_controller_pid.c",
+      "sha256": "b6165ff76a1fb87f35d35266d8c9b34947642c56f1c1890de1ca471b6aa5c554",
+      "bytes": 9863
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/position_estimator_altitude.c",
+      "sha256": "e1dc089078d977a029709881e7eea43bd3e83f98c5e74a0ed1f05bca6dab02dd",
+      "bytes": 4760
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/power_distribution_stock.c",
+      "sha256": "a745e95742ba8e2bebdaeea3f16648a6e339755659cc7aedfbc7f6dc15f2265d",
+      "bytes": 4297
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/pptraj.c",
+      "sha256": "e42a3f994d83aadac2871e1945965da008ea8316bdc3cbfe5a90cc6b38c9f54f",
+      "bytes": 11119
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/pptraj_compressed.c",
+      "sha256": "98535af2d140e25fa108bb95b25754b36da0ff196a7976a703d5664f6832d7cc",
+      "bytes": 11362
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/queuemonitor.c",
+      "sha256": "0ddbc646c391c99ad2286c006f65fb1765713131cbbdbd21fe2b5a895a04e34b",
+      "bytes": 4402
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/range.c",
+      "sha256": "fb230fe09a80dbaa1b0bc0ba10b43824a14b78d3cf9c682878aedb209e0f2d69",
+      "bytes": 2023
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/sensfusion6.c",
+      "sha256": "742e771cbd52eab054c87fee4698d6cbbce97b05a7604b27641f0e2a555f5036",
+      "bytes": 10100
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/sitaw.c",
+      "sha256": "8111c29cee3b978780085c62fca3fa2ff4869455c8a703b3fd77adf0e0ac8ef3",
+      "bytes": 10972
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/sound_cf2.c",
+      "sha256": "58c3f18e1e72edd8f70e30bed0f2f9eebf98490d059ec208c6fd1853d9a917ff",
+      "bytes": 9491
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/stabilizer.c",
+      "sha256": "f6cdbf3f5c71ab6eb2421827e6d87d04d76f9d28a806b1056c0afaf5eef55987",
+      "bytes": 21324
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/static_mem.c",
+      "sha256": "20520792071ad4623ef6c62c66c8adf0d26a74dd66db67567c81bdb5d36e5b5c",
+      "bytes": 2675
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/sysload.c",
+      "sha256": "5f7bc00d47581646ba041497d46ba4c625438b4b45c593d2ece6a9a480896348",
+      "bytes": 3855
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/system.c",
+      "sha256": "e8824bb73232be76cc9b50019c5099c1cc6e9053e1d5fa0dc77070c7ed645e7a",
+      "bytes": 9108
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/tdoaEngineInstance.c",
+      "sha256": "ea213256932e9f35f8fa9bb7e1baa2d1a8ce05d896bb2288ef7e3f97da9be323",
+      "bytes": 2403
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/trigger.c",
+      "sha256": "764fd8c33df9b2e30b37b121f57ad0dfec07fcae1f580f7893de401daf24cfea",
+      "bytes": 6479
+    },
+    {
+      "file": "components/core/crazyflie/modules/src/worker.c",
+      "sha256": "5161f160aef6839f825eb9b7086c1179bc31ab896a9996a5e9a3cba365daec5f",
+      "bytes": 2064
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/cf_math.h",
+      "sha256": "f311c96d0f22d191c2325a88c3ff70e4417cd49b9c6a6f5d320864a05df8716b",
+      "bytes": 2723
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/cfassert.h",
+      "sha256": "918c820f175f3d5e3d8358b7daa3154e3b7a304db03a97c0b00a3d1ea4cfbad2",
+      "bytes": 3024
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/clockCorrectionEngine.h",
+      "sha256": "a0c4908601231f9af24b8c084d0dd1693403f389d86cc088e81b2bdc55df3d5c",
+      "bytes": 1672
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/configblock.h",
+      "sha256": "8a94c7da2c94a31953f209ce8222e188223f7a9fe60e02225ce4954446079d7d",
+      "bytes": 1415
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/cpuid.h",
+      "sha256": "fd5eca5145183fcad039c804e756b713d36216d18ac03dfb3a3621a175f33e67",
+      "bytes": 1149
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/crc.h",
+      "sha256": "62eca465489852d26e6de7a3d13c69298d69f0288d1668ed5f78dea5974023b7",
+      "bytes": 3318
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/crc_bosch.h",
+      "sha256": "4a9873d4288ecc555ee052a8d28cf9bd5f86c80eda499439e856e276f8ee7c40",
+      "bytes": 4399
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/debug_cf.h",
+      "sha256": "808e298c8e57e0ef54922990acbaab9ea3576c25e8f5ecfbf385318e5e8a3af5",
+      "bytes": 4152
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/eprintf.h",
+      "sha256": "b971e8472c9ca3981b3c1a21bca05eef570f07f85c7b8ce038c588a31ea21ca3",
+      "bytes": 1166
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/filter.h",
+      "sha256": "e1fd76c080ad14c3e7cc9d3f1a27f341fc232b996a3fbe25bdc472b5066d00ff",
+      "bytes": 5966
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/kve/kve.h",
+      "sha256": "c3287a6a0a6aae6cab06c4af35bb1304281ac705389261c7376db74bcadba6e8",
+      "bytes": 1396
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/kve/kve_common.h",
+      "sha256": "467d2df8447b82ff48b6cc1f913d57f6cab587554e354e5e802c73886cdccf11",
+      "bytes": 1245
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/kve/kve_storage.h",
+      "sha256": "677230de0296c02fd3fa0034ff9c4502518811d18799d012e95d91ac771d8829",
+      "bytes": 3658
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/lighthouse_calibration.h",
+      "sha256": "0734759b3784a102ca34a11d72ac6724a1bd1e82fd9064656e694b4be29ac191",
+      "bytes": 3532
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/lighthouse_geometry.h",
+      "sha256": "156a11afd9fb0969ccb7c879dde27df80b2aa558d96adfa565cd460fa9704cab",
+      "bytes": 3827
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/ootx_decoder.h",
+      "sha256": "7952cb6b38a4dd083c2dc9ad4fef84f1343e33412b5d1abeced57b4a90cb07b1",
+      "bytes": 2701
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/pulse_processor.h",
+      "sha256": "aa79be2091fd08fd3961cdb504a084650209c8040172949ed15f3d55f110064b",
+      "bytes": 9145
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/pulse_processor_v1.h",
+      "sha256": "db1eaa0fbf77d81903c309a31aa89e8ca84e68eed0502dd638bf6efc0814344d",
+      "bytes": 1655
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/lighthouse/pulse_processor_v2.h",
+      "sha256": "6049b4362de775b4ee8a77ba80d2f3d87e25efec4bf8cd96deba9883db1ece9e",
+      "bytes": 1851
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/num.h",
+      "sha256": "c77e69ddb693d9e315d75a44d95984a2781fcfe94ffee1129322ad451f80e3e8",
+      "bytes": 1269
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/physicalConstants.h",
+      "sha256": "624df72dfa5cf543eb250d46e3728ccd802edcf88028cc695c1747777f19b54c",
+      "bytes": 1347
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/rateSupervisor.h",
+      "sha256": "397f577ebb5989bad22416afe2338da82e3742dcfbf0e8ce88182e9ea7d51b22",
+      "bytes": 2893
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/sleepus.h",
+      "sha256": "072a3e44fe10d8e79989b6b1d26d8b299aeacf9a08dc815577f94f957e82a20b",
+      "bytes": 1048
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/statsCnt.h",
+      "sha256": "a197987e959a24c2f53620fc2a520c6ba97ab6e29b3d4f1ee3de8b46af247a7d",
+      "bytes": 4369
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/tdoa/tdoaEngine.h",
+      "sha256": "4038752d014b946456990213e6902a5f41dea551cf9edf93cfbc30fdf7ca5fab",
+      "bytes": 899
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/tdoa/tdoaStats.h",
+      "sha256": "701eefb89de89407e55248f7af8e17b36bf507006e7fc1d148b53f714119db4f",
+      "bytes": 1302
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/tdoa/tdoaStorage.h",
+      "sha256": "2acf70929121d990bb4eb8b88f85f5458695b69b3b4980482787e5a774007695",
+      "bytes": 3814
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/test_support.h",
+      "sha256": "a2715a3aa9387c8c88ac63b4a8083e2f3a392a2f1854ec9291ee019c9db001dd",
+      "bytes": 1150
+    },
+    {
+      "file": "components/core/crazyflie/utils/interface/version.h",
+      "sha256": "e59c0e361abe0c21b903d20fbead6a3be0f1b6a94ad2b2d884ff4549f4e3f7fa",
+      "bytes": 1016
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/FreeRTOS-openocd.c",
+      "sha256": "c41052a058afb69263ea1d987e012b23631039e8a052eba5976f1b69548a8269",
+      "bytes": 584
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/abort.c",
+      "sha256": "b4be71873d8d94050d675051fa4c848336db6d4900b86b960abe93e3ab189d5d",
+      "bytes": 283
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/cfassert.c",
+      "sha256": "dd70c0103f67620df3f790634726b1cd5d72731229ef88841dc6c240c5722ab6",
+      "bytes": 4834
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/clockCorrectionEngine.c",
+      "sha256": "d7864f498a0f29a4f226bb13a0026efbbb60541dcdb5c4fa033f4354777ad9e4",
+      "bytes": 6444
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/configblockeeprom.c",
+      "sha256": "0ac17938e545ad6b314aaa529a0a9fd3bfa8c57d037b0a345f375d9e99d13bed",
+      "bytes": 8034
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/configblockflash.c",
+      "sha256": "f7d3c8c2a8773e0fc65fefa9de3dba7e8c3b57e0492720a4d524b32fc9bc513d",
+      "bytes": 2737
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/cpuid.c",
+      "sha256": "1f97741e60168c5d40299260e61034bef2667321f148fbd8b0942ccb6b6a806b",
+      "bytes": 1184
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/crc.c",
+      "sha256": "66cd1d9af1b78d5619246d29b233d9716d0374556acee3c164d031538a897178",
+      "bytes": 5464
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/crc_bosch.c",
+      "sha256": "5e164052cf64cff80403bb2d435c2f7e06123065d548e00864d42d60e5f6f8a0",
+      "bytes": 3818
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/debug_cf.c",
+      "sha256": "a84efad799405d6ff315e2ed6b8425e60c51b615870124a97634a0882e2fa8ae",
+      "bytes": 1197
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/eprintf.c",
+      "sha256": "d4be38d6fa0ecabdd12ade41ea39a9144fce76cce0849e750bf21ccedf7bf369",
+      "bytes": 6015
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/filter.c",
+      "sha256": "867a568c7bdc1d05b35814937c1c67b3014328c33479a67edb63ad6937864fbe",
+      "bytes": 3140
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/kve/kve.c",
+      "sha256": "7cd71f045be68c6f546fc1a960b15daa64764c039c0f2068c1918e4feb943622",
+      "bytes": 5272
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/kve/kve_storage.c",
+      "sha256": "8d40c85a7701a0a5ba20059603ae57469b7810d7dcd9379f89ad47d6ca46a8d4",
+      "bytes": 6270
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/lighthouse_calibration.c",
+      "sha256": "091f2a1cfec95c1d275988102a525cd5b4f1dc351768b811effd4f486b5f24cd",
+      "bytes": 4179
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/lighthouse_geometry.c",
+      "sha256": "3083bc00bac2fa9cd47b50231065639e57e190670e9b89a9adc85bac8a3bf5f7",
+      "bytes": 8319
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/ootx_decoder.c",
+      "sha256": "9bcdb4bcd67bc1db77885a6b34a34b63957ae959f5ba14e8699d36bf00f05131",
+      "bytes": 3965
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/pulse_processor.c",
+      "sha256": "a127fbacd735ae4abe5e2e1dfaf6cc50dcdf5790355f40bb0d3cef35cfa5fb84",
+      "bytes": 1799
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/pulse_processor_v1.c",
+      "sha256": "b4a6a23e2be3e4bb2cce0b8d6423751d939860c156c654151897dde4dc7d9210",
+      "bytes": 16109
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/lighthouse/pulse_processor_v2.c",
+      "sha256": "0afc28d1beffc649af81d3ecd05993d2fbaae6a9c5cd34fdcfe26582d1a44e04",
+      "bytes": 8257
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/num.c",
+      "sha256": "ac05051dba30ebf67f7cfedadba97ce3f665c155390f31cfdb11689832f5b763",
+      "bytes": 3084
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/rateSupervisor.c",
+      "sha256": "724f263a73f5b4f2db63e9cc5a9827f9b52cf075f1fa6619414d0dcf25939cd9",
+      "bytes": 2236
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/sleepus.c",
+      "sha256": "13c95eaf8a2eae9532feb30c9caa7e33d3bc3c73348fe7c2ce7c72bfefcd65c4",
+      "bytes": 1429
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/statsCnt.c",
+      "sha256": "5b71b8d1f125a1f0ca1279ec586cdfa7e18bc4fb6cc55ce89e0e5a10e4a6daf4",
+      "bytes": 2223
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/tdoa/tdoaEngine.c",
+      "sha256": "52749768af72a677a9f181ad7b292b1fe23879a345a395d0a98d4ee87c46667e",
+      "bytes": 10012
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/tdoa/tdoaStats.c",
+      "sha256": "02dec503288d56a5fd088b0f2bdf784f305e3459e62f75a7c068fb56607f1735",
+      "bytes": 2552
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/tdoa/tdoaStorage.c",
+      "sha256": "d23566e618d26294bf3ec0d446821daa74c35559a9e87bee8a65bcd319bca617",
+      "bytes": 9961
+    },
+    {
+      "file": "components/core/crazyflie/utils/src/version.c",
+      "sha256": "7c54ceed43ebc23e14b1cd1ffb2ce9a30c4f4224950f146678548457aaf135b6",
+      "bytes": 1471
+    },
+    {
+      "file": "components/drivers/deck/CMakeLists.txt",
+      "sha256": "6548906fc400e662a8228e8fba88797912b912d8dda5ba76fb4ae65c9b45c7b1",
+      "bytes": 194
+    },
+    {
+      "file": "components/drivers/deck/deck_digital.c",
+      "sha256": "f3862bb0c718e7e8e25ef5173a9b85d674b97bc50cdc400e7539ad1a6d824a3f",
+      "bytes": 1957
+    },
+    {
+      "file": "components/drivers/deck/deck_spi.c",
+      "sha256": "f96187beb9369b0c8cde3480ee4846a24f254102609009e09f4c2dc00b9c34d1",
+      "bytes": 4169
+    },
+    {
+      "file": "components/drivers/deck/include/deck_digital.h",
+      "sha256": "512b5459d88f5a09efe5ba637c109963b0f6127de30e10e1fe0fdcf9f68f6632",
+      "bytes": 1121
+    },
+    {
+      "file": "components/drivers/deck/include/deck_spi.h",
+      "sha256": "12a01a532c01f87e37167941625004e291012462cd1baa94383263a0117e02a6",
+      "bytes": 1400
+    },
+    {
+      "file": "components/drivers/general/adc/CMakeLists.txt",
+      "sha256": "5aba698574afe1b9479fde643c57d13c196208c2b49fecef8d95c6dd4a04d035",
+      "bytes": 150
+    },
+    {
+      "file": "components/drivers/general/adc/adc_esp32.c",
+      "sha256": "1378f3c17508b27e14f90b18aac3028c2ed4a733f9ba5e0f433f91bd539f0055",
+      "bytes": 4102
+    },
+    {
+      "file": "components/drivers/general/adc/include/adc_esp32.h",
+      "sha256": "04423e07f26158d1b31f460cb693a74b9d1f50c02657ea39709db10bd76b2cf1",
+      "bytes": 1973
+    },
+    {
+      "file": "components/drivers/general/buzzer/CMakeLists.txt",
+      "sha256": "3915260b37b3c658d1f029de2f5f0be12290212a4e052841ee2d564041cd4f68",
+      "bytes": 176
+    },
+    {
+      "file": "components/drivers/general/buzzer/buzzdeck.c",
+      "sha256": "a9262d5f894eec352ebf893dcabbb4b1b4fed8d94c42e0bfc78fbe8e15c8a514",
+      "bytes": 1405
+    },
+    {
+      "file": "components/drivers/general/buzzer/include/buzzdeck.h",
+      "sha256": "7cadb90f0bb73cd925028f6a099e949d4032f88dcd1cdd8ec67104eb3fd6bc1b",
+      "bytes": 791
+    },
+    {
+      "file": "components/drivers/general/buzzer/include/piezo.h",
+      "sha256": "9cfc9dde8ce4ab55d6cc1e38ce85220308215d2683c468e5c969cad23cef3d9a",
+      "bytes": 1336
+    },
+    {
+      "file": "components/drivers/general/buzzer/piezo.c",
+      "sha256": "546e46d5f1a189c9fbf514a2a0801c0bb0432ac550cc12ea03bdfb0016f02785",
+      "bytes": 3104
+    },
+    {
+      "file": "components/drivers/general/led/CMakeLists.txt",
+      "sha256": "8b991883516c62288c523f6dc9691e2b1bbf5c93f563c1baf1ad9c44d537f3bb",
+      "bytes": 160
+    },
+    {
+      "file": "components/drivers/general/led/include/led.h",
+      "sha256": "5864744f3b3792c1ef48981878818eb44187c83ce25bdcfc894f6e727509a010",
+      "bytes": 1843
+    },
+    {
+      "file": "components/drivers/general/led/led_esp32.c",
+      "sha256": "80b8b7f0eb62a0fc816e8aeef2c61fd2f780cffaffe84471f56073f5072f6204",
+      "bytes": 2681
+    },
+    {
+      "file": "components/drivers/general/motors/CMakeLists.txt",
+      "sha256": "9ae97fddf0a6c7e5c48f01317b1bdac1fd9fc8fef7f382688079caef45a14494",
+      "bytes": 183
+    },
+    {
+      "file": "components/drivers/general/motors/include/motors.h",
+      "sha256": "3ffd5743a1d525b36d94a7b3c0be7e62eaa6b02f3bdadcd6436d1d23f8ef0435",
+      "bytes": 5301
+    },
+    {
+      "file": "components/drivers/general/motors/motors.c",
+      "sha256": "2ac0266481f22d4efd43f0a3445c4b7abe84c250f0256d3780b1089a7befc178",
+      "bytes": 10221
+    },
+    {
+      "file": "components/drivers/general/motors/motors_def_cf2.c",
+      "sha256": "ce18cba3e9b9946a860ed1ebdba806f900c48fa7cbe0534d4b8761eca5ad395b",
+      "bytes": 1325
+    },
+    {
+      "file": "components/drivers/general/wifi/CMakeLists.txt",
+      "sha256": "f3508fa0a0fb2e41c6f939782824c1d392b7b8fe10f91b77a07f1678fb16d5b5",
+      "bytes": 391
+    },
+    {
+      "file": "components/drivers/general/wifi/idf_component.yml",
+      "sha256": "9be386d4f5356a4ab088549f34dceb2d521c987d05970dc7844092e9f10ee096",
+      "bytes": 228
+    },
+    {
+      "file": "components/drivers/general/wifi/include/wifi_esp32.h",
+      "sha256": "d2e79e17eca9410afc460a7690ee2d03df1b971a32a5ecd9b3bfcba5fbff3c3d",
+      "bytes": 1281
+    },
+    {
+      "file": "components/drivers/general/wifi/wifi_esp32.c",
+      "sha256": "6f004010dcc16307896b38ebdd4a13b7235619480542fb71491655184c2c697a",
+      "bytes": 12302
+    },
+    {
+      "file": "components/drivers/i2c_bus/CMakeLists.txt",
+      "sha256": "b51928b25f668823eb6f07597a5444b43b678f35032fd448e3540c89d65e021d",
+      "bytes": 214
+    },
+    {
+      "file": "components/drivers/i2c_bus/i2c_drv.c",
+      "sha256": "3c3dbc1ffaf85915cc98e9a3bd9451f3dd4e5f9078ffaa88f486dd58d3b40f19",
+      "bytes": 3719
+    },
+    {
+      "file": "components/drivers/i2c_bus/i2cdev_esp32.c",
+      "sha256": "f4cc8249cf2d61e244e5b63163e918fe894f2eaf4fbf761fbac0a53a2697b0c2",
+      "bytes": 7842
+    },
+    {
+      "file": "components/drivers/i2c_bus/include/i2c_drv.h",
+      "sha256": "794e5cbdc16a0f49d509f7e38cba8bb4eae101f73f83066ead68bd570978afe1",
+      "bytes": 854
+    },
+    {
+      "file": "components/drivers/i2c_bus/include/i2cdev.h",
+      "sha256": "12e0a686636e1618d908c311ac59d552e42064fbeafa2400875ff38bfc8b5600",
+      "bytes": 7772
+    },
+    {
+      "file": "components/drivers/i2c_devices/eeprom/CMakeLists.txt",
+      "sha256": "1d1840565bd66721657631cbd8ad18679390b4520e52039d2552fc8624632b12",
+      "bytes": 177
+    },
+    {
+      "file": "components/drivers/i2c_devices/eeprom/eeprom.c",
+      "sha256": "840b4c811fdccb3bf38cd7b58f525d8d465ae5f41785d3233dcac88cf6c42a30",
+      "bytes": 4179
+    },
+    {
+      "file": "components/drivers/i2c_devices/eeprom/include/eeprom.h",
+      "sha256": "18404137838450dc70ae549d390b7caedda459d7b9678db575aed8492dc29d03",
+      "bytes": 2130
+    },
+    {
+      "file": "components/drivers/i2c_devices/hmc5883l/CMakeLists.txt",
+      "sha256": "b10c246effba113f6fe416a9cccbe55befb6d2d2d900d803cdbc0090c9a54833",
+      "bytes": 188
+    },
+    {
+      "file": "components/drivers/i2c_devices/hmc5883l/hmc5883l.c",
+      "sha256": "6a1ce405be7a559fed7fee3d7d9ad3fee1e72471b2dd6aa6b324eade31d74d23",
+      "bytes": 18224
+    },
+    {
+      "file": "components/drivers/i2c_devices/hmc5883l/include/hmc5883l.h",
+      "sha256": "95a4e693dedb4b1c0a0667827a574f40a92361243f0b4d6148c48ea99ec344fc",
+      "bytes": 5917
+    },
+    {
+      "file": "components/drivers/i2c_devices/mpu6050/CMakeLists.txt",
+      "sha256": "7680b3b8740e15bd825a4274b9c2fa7b4fa4d00edbb5f7139342a19548785791",
+      "bytes": 191
+    },
+    {
+      "file": "components/drivers/i2c_devices/mpu6050/include/mpu6050.h",
+      "sha256": "67f72f7ec2f5e48a7d8e2be5194ef1fae02123afde7a443ca2aa80d843efb4d5",
+      "bytes": 46337
+    },
+    {
+      "file": "components/drivers/i2c_devices/mpu6050/mpu6050.c",
+      "sha256": "e9cbe371b18f6d37d5e2c33ff62dd03ac63b2c9d29b49acc6d50a716692e3688",
+      "bytes": 132995
+    },
+    {
+      "file": "components/drivers/i2c_devices/ms5611/CMakeLists.txt",
+      "sha256": "7fcd2dec89317d974afc378def48e616e0606e80f76d5ebcfdf2242b03599ddb",
+      "bytes": 186
+    },
+    {
+      "file": "components/drivers/i2c_devices/ms5611/include/ms5611.h",
+      "sha256": "ea1bea732f92c7372ab67556bc71e19f16f44f3e29fd1b26c7268502c43c56c3",
+      "bytes": 3227
+    },
+    {
+      "file": "components/drivers/i2c_devices/ms5611/ms5611.c",
+      "sha256": "329dcaa6a7194814f245c0c60b925579d0f6910d132b020fdd8443c159298e00",
+      "bytes": 10506
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l0/CMakeLists.txt",
+      "sha256": "03ca2bd4f26f61798cddb2e0615d07c45a640851ae0da380047097310e1d4e46",
+      "bytes": 166
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l0/include/vl53l0x.h",
+      "sha256": "9e23e7028becf76f6660a33e01d31b00d0752052022ff3e936e65ce27db34ee2",
+      "bytes": 10978
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l0/include/zranger.h",
+      "sha256": "db562083a148b71f468e034da7b01b316f283647b385319a497b3683f8770134",
+      "bytes": 1076
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l0/vl53l0x.c",
+      "sha256": "61266e42872c687c181397d967e6b1f5f86a00de254b803fcc581bd4d7668870",
+      "bytes": 43086
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l0/zranger.c",
+      "sha256": "d166cf6b411a800583b419112854018a65ea65aa442af50b564e0c5f8ba3c2eb",
+      "bytes": 5289
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/CMakeLists.txt",
+      "sha256": "3770149fc6f3aaab71773c6e20f9d241355cc466f36bb707cd794bd9a3056bee",
+      "bytes": 878
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api.h",
+      "sha256": "e145e0756983eb550ecf4c3d2f522c04c21cddf85a4d09e05e57e7d3e52939f1",
+      "bytes": 43044
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api_calibration.h",
+      "sha256": "7a6be38e8c234a2f5274546ef0b0bbe19b7099422edff83e93186b9ffd42ae8f",
+      "bytes": 9137
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api_core.h",
+      "sha256": "05809c9f47726fcc2bc2d521203f4bfc60e701088349703ee2609ff71e22dc3b",
+      "bytes": 39747
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api_debug.h",
+      "sha256": "dcf9809309f4c2c5b24956969e5304dec5f8d23e7f0321c0bcd271a27eb11cbb",
+      "bytes": 11811
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api_preset_modes.h",
+      "sha256": "2b85773d64323130c6e8f08a52492dda29b2cca936857d5a68f093dbef981593",
+      "bytes": 19112
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_api_strings.h",
+      "sha256": "58c57ad9d036cd7ed6a1a5391a6609e95e848248e5558d8a1a87b49d9dc36a40",
+      "bytes": 7698
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_core.h",
+      "sha256": "91583c0129ec87131f027832456de04f95ad6533c89360a40faf580afafe110f",
+      "bytes": 31737
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_core_support.h",
+      "sha256": "f9f534f5f24aea2c9c2b42a3e3ceb50ff77b6de796d532f5781b117cd65f9a4a",
+      "bytes": 7219
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_def.h",
+      "sha256": "dc52778a14500a92c28265bb9ff4bd683e70c040fe731417007529639df8fa69",
+      "bytes": 22600
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_error_codes.h",
+      "sha256": "15ee99ceee589f02ed89f683e61609823c0d059a473ea527d52537b72bab3223",
+      "bytes": 12402
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_error_exceptions.h",
+      "sha256": "1e06fdd82d1b86bd99ad8e88bfa62b83deb33fbfde50aaa282b3b50156d13b6f",
+      "bytes": 4104
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_error_strings.h",
+      "sha256": "01d0a17d3f3ba418929d4812d0b1236317a6396ac244a7afa913ac1efe7cd912",
+      "bytes": 8125
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_ll_def.h",
+      "sha256": "998d79a76f3ef0129e8345abc0a65472d60a7970c13f45ac90f5f3c238a78a10",
+      "bytes": 35425
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_ll_device.h",
+      "sha256": "a03f158fcd51f947d562060e8ddb320f00e8bf042d0eb1a82b6b3dc51a13232b",
+      "bytes": 32864
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_nvm_map.h",
+      "sha256": "e8c995592da5c42297601c10245b7211b7b0ce1b4f40f235e9b79287daa704e1",
+      "bytes": 63749
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_preset_setup.h",
+      "sha256": "c938cacdf972029d3df44e2eb3ed9520a1120f8105370fddb574f67548d805ab",
+      "bytes": 4438
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_register_funcs.h",
+      "sha256": "d2bc50a78a398437fa896a32d81d98fa8e6e00394bf58a2b673567f1c32e86fd",
+      "bytes": 52401
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_register_map.h",
+      "sha256": "19676832eafbfe3f976c59bb98da4f9c94cdbd39de7666e4ffa2b695adcc19b1",
+      "bytes": 268587
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_register_settings.h",
+      "sha256": "f3e5dbfd90c3e0f1e8a67c5fca7929212d9387088e583abfe6a48003b1104caa",
+      "bytes": 8487
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_register_structs.h",
+      "sha256": "7758e3205d72ca1f1960b757b4bf8f9c905b1533db5e5b6b56df969df680d42c",
+      "bytes": 83003
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_silicon_core.h",
+      "sha256": "f405dd0205d416df463c0e03536508b0a5719964a87310e52251b467d803291b",
+      "bytes": 3652
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_tuning_parm_defaults.h",
+      "sha256": "2b5bc01c78273f688c24995ec9095c2e4b8876e4eb4887b459d7ef52bea0bb3e",
+      "bytes": 8014
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/inc/vl53l1_wait.h",
+      "sha256": "c442fbd52c6c94a5a4ab21d236603f8c6689e90d96e385618bb2d08231d4b314",
+      "bytes": 8453
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api.c",
+      "sha256": "b99a63ef66c05953af7df1c8f002aa08f290d629ad87431e5adadcc8d8bd1e06",
+      "bytes": 79912
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api_calibration.c",
+      "sha256": "11c91bf340654d9ab047bab164b0971a5d8c40615148ba261ba2ef140701362f",
+      "bytes": 23776
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api_core.c",
+      "sha256": "2274878d433e4ed3a7d99b1db30b4be70d4bcf1c4eccb3ef06429951875aa0d8",
+      "bytes": 98587
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api_debug.c",
+      "sha256": "4b0b6b01a5dc4c038bb9e3be5a07594dc7dec154059867709b6bdf1e98b882a9",
+      "bytes": 38315
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api_preset_modes.c",
+      "sha256": "fe058fe2ed479b9c7b41f3c1e920d8465e1452cc278707ec57902b607eac4659",
+      "bytes": 43309
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_api_strings.c",
+      "sha256": "631f3a306f6016272b7336a655447a407e7ccd12e128e2e20b8d24f4f2bdc2a4",
+      "bytes": 7914
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_core.c",
+      "sha256": "8c996c9e84ebdd287f0ccd321c3768525978b97f49c46ff33f5b701a9cc5b190",
+      "bytes": 58394
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_core_support.c",
+      "sha256": "58f258ac483baf8f6715137298c97b304c0994c78c479a2e147dfc1313deeb49",
+      "bytes": 11372
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_error_strings.c",
+      "sha256": "4c065fec36df86b2450ccf327b627d2a05a6783cdbf89a9a500c662ce6055a3b",
+      "bytes": 10428
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_register_funcs.c",
+      "sha256": "102d9c761d75289b542beec74eceee4e36c73876d4b6a05c6a4fe03225812918",
+      "bytes": 124445
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_silicon_core.c",
+      "sha256": "61a8daaf997a35b94a83b0fd508218b46929a2944ab1b090c3b2c161b4f1b998",
+      "bytes": 4980
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/core/src/vl53l1_wait.c",
+      "sha256": "55ad102512ada9c3d6d80c61f97f4c2b4e4d3aefa20b1d37a779903a6daf68cd",
+      "bytes": 13555
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_platform.h",
+      "sha256": "6cf9d62e3664ed93059fe8616e1da0a075b7e97abc598375ab991e21d2ac145a",
+      "bytes": 1859
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_platform_log.h",
+      "sha256": "6039be42bec1885149f6e5d32ed10c0eeb3f9bd046e928782cae327f40d36bd0",
+      "bytes": 7764
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_platform_user_config.h",
+      "sha256": "e0b7bc6543bb039edf8f790c0a0a1b4e9dadcdc1141f2678a8ccad2a6ae0b112",
+      "bytes": 3599
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_platform_user_data.h",
+      "sha256": "6187d311f3e6c6556f6443f519ec806239f5cd6a0018b45b613cf72a089fe8c3",
+      "bytes": 2471
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_platform_user_defines.h",
+      "sha256": "03da5db64ad6856ef22760c770578923b085fdb469127446f13362909953622d",
+      "bytes": 3158
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1_types.h",
+      "sha256": "c694eb20002d71f18e777a97bdcc7230e4a13d28463a537c73f225a24387ea10",
+      "bytes": 4315
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/vl53l1x.h",
+      "sha256": "f379f4cda85f81c2f69da9f2d24104754272fcea8a702c4128bdf6b5ac17f056",
+      "bytes": 8388
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/include/zranger2.h",
+      "sha256": "edcd6a8674c1b98e4d3f3476d6ecdafb9c9f4f96d80af017abb9af007726ad78",
+      "bytes": 957
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/vl53l1x.c",
+      "sha256": "09a5f5957756ebf4121cec7440e8427823424983d53a0273587131d6b7009cb2",
+      "bytes": 10248
+    },
+    {
+      "file": "components/drivers/i2c_devices/vl53l1/zranger2.c",
+      "sha256": "772906bdc4aa792221f686b82e6299a2b8c66217af0d364066e05f9854915179",
+      "bytes": 5496
+    },
+    {
+      "file": "components/drivers/spi_devices/pmw3901/CMakeLists.txt",
+      "sha256": "00a3841c2db4a505f006b28f75afbd68c33e695926434ee15f28fe49a9333218",
+      "bytes": 163
+    },
+    {
+      "file": "components/drivers/spi_devices/pmw3901/flowdeck_v1v2.c",
+      "sha256": "50d53a7a216322713c14b94f785d6cf05c0ff27a772bdc5bd6d145086c7a911a",
+      "bytes": 7620
+    },
+    {
+      "file": "components/drivers/spi_devices/pmw3901/include/flowdeck_v1v2.h",
+      "sha256": "ca59a23681b62358f6580ac03c513cfdbcfae93c3ca6f6275b495e3a86db3c6e",
+      "bytes": 101
+    },
+    {
+      "file": "components/drivers/spi_devices/pmw3901/include/pmw3901.h",
+      "sha256": "38dcc02895100cdf2d3d0bcda3306cbd2bb225b809040de66dae4018c8ff8529",
+      "bytes": 1877
+    },
+    {
+      "file": "components/drivers/spi_devices/pmw3901/pmw3901.c",
+      "sha256": "fd6de880e60605ec67d824de55bca7e81c22474dea2893a6972b48ac3a4ca9fb",
+      "bytes": 6475
+    },
+    {
+      "file": "components/lib/dsp_lib/.DS_Store",
+      "sha256": "5d374dcecf2e7f0c20fbb0a1e09bb0ad1492b78f3a35c3496aa32166fff6c7c0",
+      "bytes": 12292
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_abs_f32.c",
+      "sha256": "46260514b7d6f873883fdbebf390bcfd2fbc32375edd847b5122742c06b86aba",
+      "bytes": 1260
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_add_f32.c",
+      "sha256": "7cc0b40bd0216b8b14457898e7bb4ea949c7c3300cfff62b0546b35a19e6b8d7",
+      "bytes": 1114
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_dot_prod_f32.c",
+      "sha256": "b2d8db85c3d4024740a609b2a028c82aa8ed9485d8b11b3bd551fcfe9ce2d4a5",
+      "bytes": 1522
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_mult_f32.c",
+      "sha256": "7e4b3cd2ca02d15052e6ad84fa06e2778d79de8929510d9584d8e7922aae9217",
+      "bytes": 1197
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_negate_f32.c",
+      "sha256": "b84110f2ffc97e353ab4f51c8a12c3825355b069553e01add0db5c4435a3e2b6",
+      "bytes": 1169
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_offset_f32.c",
+      "sha256": "0acefbff2454c226eb06bf965d0d6c76c592a33f26a10558e08c5bf85723e618",
+      "bytes": 1285
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_scale_f32.c",
+      "sha256": "f635222f039691d64034cbc0084a505ffd88ed4587bc3be0f19e9cad828d804b",
+      "bytes": 1773
+    },
+    {
+      "file": "components/lib/dsp_lib/BasicMathFunctions/xtensa_sub_f32.c",
+      "sha256": "6676fee9fd34008bbc0aa95ad4ea749d60c76a04839016f209b7817151280dc9",
+      "bytes": 1179
+    },
+    {
+      "file": "components/lib/dsp_lib/CMakeLists.txt",
+      "sha256": "cadf7c2780a7575fa34ceef67a8064c3fa51210d784667fa02f8211afd7d7b60",
+      "bytes": 561
+    },
+    {
+      "file": "components/lib/dsp_lib/CommonTables/xtensa_common_tables.c",
+      "sha256": "49d915c91d171f296cc03c9057c833e810d37cc646fc3ade2aeda1a645cfc4b5",
+      "bytes": 541436
+    },
+    {
+      "file": "components/lib/dsp_lib/CommonTables/xtensa_const_structs.c",
+      "sha256": "554628bc4238980e4e71d41db4e5bb4a940a148b29d04862efe7c56626358fed",
+      "bytes": 3224
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_conj_f32.c",
+      "sha256": "34e768f2bde79b012c1069409bd734d231fde4b51e422efc30b361e6c5096f1f",
+      "bytes": 1590
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_dot_prod_f32.c",
+      "sha256": "c6f6d697ef14e67ff5085c070bc49178558ce5c5a5b3d6e22d90cc0e8ca4c99d",
+      "bytes": 2118
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_mag_f32.c",
+      "sha256": "1574bb28c83df2115659af6eed05b0a993e55a73b882ff16945c411b223ecd92",
+      "bytes": 1699
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_mag_squared_f32.c",
+      "sha256": "c0eb2c6924e9f318109d7856c42ea1cc365902ff5186117dd05ac215713f7ef4",
+      "bytes": 1850
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_mult_cmplx_f32.c",
+      "sha256": "904882d0930210b3055af2b7633bf7764d8d2ecb0702afdb7e7c15d0259cb255",
+      "bytes": 2051
+    },
+    {
+      "file": "components/lib/dsp_lib/ComplexMathFunctions/xtensa_cmplx_mult_real_f32.c",
+      "sha256": "f546a57c65f0ddf4f52fb74f92a76e47f0ff3d9cb19f48fdfa58b9a09bad1b24",
+      "bytes": 1967
+    },
+    {
+      "file": "components/lib/dsp_lib/ControllerFunctions/xtensa_pid_init_f32.c",
+      "sha256": "a2efb9ad1f05cd17a6c1ac3f4379b70efe443b3cdee89b333ea0fec314754d68",
+      "bytes": 1187
+    },
+    {
+      "file": "components/lib/dsp_lib/ControllerFunctions/xtensa_pid_reset_f32.c",
+      "sha256": "a1d38d9332ed0d5046403ff22ca16cce5e213eb0b78b1e007c32906c0bbd3655",
+      "bytes": 489
+    },
+    {
+      "file": "components/lib/dsp_lib/ControllerFunctions/xtensa_sin_cos_f32.c",
+      "sha256": "1844a70f8c50ae4805e634cf1189b961256c720436bae2e56759efe068bb18cd",
+      "bytes": 3882
+    },
+    {
+      "file": "components/lib/dsp_lib/FastMathFunctions/xtensa_cos_f32.c",
+      "sha256": "1d0a33c4a9a66a5a65d7243d0b9845efb44c6d952e5465a81783d07a0d85643a",
+      "bytes": 2379
+    },
+    {
+      "file": "components/lib/dsp_lib/FastMathFunctions/xtensa_sin_f32.c",
+      "sha256": "dd68d3530f0035aa065ff07ebd58cb2e51c5e7d91d7c10e7b7aaf7d96568e9cf",
+      "bytes": 2478
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_df1_f32.c",
+      "sha256": "ed725ecdd07056c4d38cf7b6596ac2fe21ed848009d7fc6cd4d1cd331174f9e9",
+      "bytes": 9565
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_df1_init_f32.c",
+      "sha256": "ad9501d7e708f85fbb99400956db4e622047365d39c06785213b8fd0c6558c92",
+      "bytes": 2132
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_df2T_f32.c",
+      "sha256": "40de4d8fcdb6f3fe03a76eeba44ac7b0149b3b39c97e918efa3578b3bbdc3e5a",
+      "bytes": 8857
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_df2T_init_f32.c",
+      "sha256": "3a486f80e136e55b310c7bf8d64e367388fefdc2963cc4e95df66c0484b2e17a",
+      "bytes": 3087
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_stereo_df2T_f32.c",
+      "sha256": "742511d2cb6d028b012167cb4a944c3d2018800125242b6d6a2e720b75a03c1b",
+      "bytes": 9317
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_biquad_cascade_stereo_df2T_init_f32.c",
+      "sha256": "1602e1b66cb548a3c2dba56a8acc6f231a1c33f7972d222f72f68dafd198494f",
+      "bytes": 3125
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_conv_f32.c",
+      "sha256": "b0f94528611e2e22747f4cc7a78ac263f8742b80b88e0fe44413596079483107",
+      "bytes": 5205
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_conv_partial_f32.c",
+      "sha256": "fa4d80363c1d2561ddcdfac0f73f5e7dca18c020b45e56e7d9ae59e383df468b",
+      "bytes": 4945
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_correlate_f32.c",
+      "sha256": "5f117d4a13f8950000c3f609e711add220bc1500dbc95e1cace31c2bc121cb74",
+      "bytes": 7077
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_decimate_f32.c",
+      "sha256": "e49306c00b86bddbd28a2d3b083b417900a9e06ee7356c0c4a70c75896f871c1",
+      "bytes": 8775
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_decimate_init_f32.c",
+      "sha256": "2272f3ea67f067c150ceff069dba33dab56fb3035d8ff322f8642c4b6ed9646e",
+      "bytes": 3211
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_f32.c",
+      "sha256": "3fde9bfe7a6eb6577e36071b702d95c72d16b0dda784a29c151c1dc2b695849a",
+      "bytes": 7622
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_init_f32.c",
+      "sha256": "354d63a3ae78cdf7f51ba3bf618b52623040730b60a94111f07469714d7e6c13",
+      "bytes": 2535
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_interpolate_f32.c",
+      "sha256": "b73cf525998417d239f0633ed276b2cbe9d3073b06baafa7b57e05eae8326183",
+      "bytes": 9432
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_interpolate_init_f32.c",
+      "sha256": "d1471e82715a203a2dbab171089e280c7af5d6f22ca2b90212eced976eee356a",
+      "bytes": 3509
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_lattice_f32.c",
+      "sha256": "22b1a098d8631ba9086d35d1b3168ba236fc02fd7f8e2d9df189617301841ad3",
+      "bytes": 7117
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_lattice_init_f32.c",
+      "sha256": "7ad90bb7c9e4af07b7d933671ad7aeb21f9d59f77e06d1d5f16f9b5fc647012f",
+      "bytes": 2058
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_sparse_f32.c",
+      "sha256": "5db17d9a98123c235fb1952948303b05ed64c68ce63ae79c0b5dea0e3884cbe8",
+      "bytes": 10122
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_fir_sparse_init_f32.c",
+      "sha256": "cdd22dad7fa9ff1837f6cab949d0491ecf37f4f69017f924d8eaa92365a62d10",
+      "bytes": 2934
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_iir_lattice_f32.c",
+      "sha256": "f9ffb4720ff2b4cae50e4fbfadcc9c0be73cc213c5325f0c3ed819b54348894a",
+      "bytes": 7727
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_iir_lattice_init_f32.c",
+      "sha256": "a103f91ed997d10ad273ec27433c239a28b3a745a9e7955028c92536a586f460",
+      "bytes": 2402
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_lms_f32.c",
+      "sha256": "7a7f78d5bb25618a34ef2c9ab0a3c158010d7e151ebea8c990a9df12bcc46fa8",
+      "bytes": 11313
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_lms_init_f32.c",
+      "sha256": "2f09b247d3bc0e6c616984c7c012ee9e69b334926e177a8a41b698d5ca83f41d",
+      "bytes": 2643
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_lms_norm_f32.c",
+      "sha256": "0a18a41919a4d94f79a0aca2a9aaa0d2b33751940d1f1068f783627e7859f06c",
+      "bytes": 11068
+    },
+    {
+      "file": "components/lib/dsp_lib/FilteringFunctions/xtensa_lms_norm_init_f32.c",
+      "sha256": "89049ac34c001ded4fe6be810d62b0f9416d1ac63b998a840f1459c7968e9881",
+      "bytes": 2820
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_add_f32.c",
+      "sha256": "aec5b6f67065f944c999667e23a1d46f3c27199e45f75c3c84866e8fb8518671",
+      "bytes": 3484
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_cmplx_mult_f32.c",
+      "sha256": "9b2d2030beed885bda3991a6ace83915ce8d1b0e88c05a4aa959bfce2fbfb10f",
+      "bytes": 7948
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_init_f32.c",
+      "sha256": "2532cd08abaa20300ed876f90e8745e6908ad47423a2db9cae027a7150e9a9af",
+      "bytes": 2099
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_inverse_f32.c",
+      "sha256": "2884e61d2cf2a70aa34e797a5c624de04fb714e1c6bc9c25b97b3b6520d678f9",
+      "bytes": 12068
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_mult_f32.c",
+      "sha256": "dc1379c509713f9e2953fd985812e11ed8cb1745160b4667186bb19a505bb24c",
+      "bytes": 5603
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_scale_f32.c",
+      "sha256": "b8264e4b57a258288f4422dd8b64bee9e259f8e3a334f334c90a3c1a575ade78",
+      "bytes": 3725
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_sub_f32.c",
+      "sha256": "7fef1e5969f0c7265a4e7a9fae27676f918945ad78549c265bf8ad73bda80abb",
+      "bytes": 3546
+    },
+    {
+      "file": "components/lib/dsp_lib/MatrixFunctions/xtensa_mat_trans_f32.c",
+      "sha256": "aa9a750ac08212bbc2e52a5e9e729a3e38aad612ac92eb1565e8c276c1550efc",
+      "bytes": 3592
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_max_f32.c",
+      "sha256": "881af3ab50d24b5792c9626f24751b6fbb20d5a24aa6fd4f53c90ad9e19981af",
+      "bytes": 2679
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_mean_f32.c",
+      "sha256": "4ab732e825b1f839c4d12a1e21b62658504610e5ca38bceab31ace41685efd70",
+      "bytes": 2412
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_min_f32.c",
+      "sha256": "57ee7cfeaed3582cb8c1668645877ba0dcad2d39e9a07f3c419f36449d603aeb",
+      "bytes": 2679
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_power_f32.c",
+      "sha256": "8d090270de6c394b5bb3b96eb5e834a89cd9cf7479283cb086f8eb4a6d07c9a7",
+      "bytes": 2606
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_rms_f32.c",
+      "sha256": "5bfd52d170a4c1a67da3132527271b74d8511a6cd8ec72959b2248a62399d290",
+      "bytes": 2648
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_std_f32.c",
+      "sha256": "d6793c0723d9a493701aa17faa845efdb84b21c530c2306a2d3783b3afd46f04",
+      "bytes": 3497
+    },
+    {
+      "file": "components/lib/dsp_lib/StatisticsFunctions/xtensa_var_f32.c",
+      "sha256": "218977dadb3bc3195bb8a7ee90442a0366881bdf69974b9d77871beb3433464e",
+      "bytes": 3125
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/.DS_Store",
+      "sha256": "20a9b3ed2ac6f4700f303f209596816a920b6fa161d13842275f039881284e59",
+      "bytes": 6148
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_bitreversal.c",
+      "sha256": "ac325489cf23ace0a489acbbc3c5397d89e178b0dc1eb9c4c5c92f3903886b69",
+      "bytes": 3232
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_bitreversal2.c",
+      "sha256": "bb61e2bd57887f86a3cbc130160699bce0e72d2d4bdb9287a7d92716e873fdc6",
+      "bytes": 1025
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_f32.c",
+      "sha256": "0a09df1220875a2226aab05e9f16e6b3b60d1726320a5c683ad7f247ae749613",
+      "bytes": 17636
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_radix2_f32.c",
+      "sha256": "cdf28c1fc2c8d31487b2c8ba11ca94aec58a5c642dbd260ab81e49884b7f9659",
+      "bytes": 6499
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_radix2_init_f32.c",
+      "sha256": "3d284212d112be02d75ea664ddc36f07661d92b105e8606164dda48026bf54cc",
+      "bytes": 6539
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_radix4_f32.c",
+      "sha256": "9ce997ff0d85197ed5a0c427bf3978cd381584e2de53fcdf9c0db986163f6e26",
+      "bytes": 12691
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_radix4_init_f32.c",
+      "sha256": "48c00cfe6d13283c1e2fae051fc164333e0784ed225aed700675afb3f1bed791",
+      "bytes": 5158
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_cfft_radix8_f32.c",
+      "sha256": "8e23f263d13e5af254eb9946c285ed6bc3166509b86aa3177c1c2e3d3533aeac",
+      "bytes": 8775
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_dct4_f32.c",
+      "sha256": "db49cfdd814ec3af5b93dc2ee9a05fe27b57b7542d8e838a12dbe26cefe18c4a",
+      "bytes": 11745
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_dct4_init_f32.c",
+      "sha256": "25bd8456b5f59da4ab66d78c945a68879b10717a42715d1ca4b0e0d1443cd771",
+      "bytes": 811915
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_rfft_f32.c",
+      "sha256": "bacce02d2f2f605c1e7ec3e264577ff32cd1bad6afdfe8fbd2633cfbcc00d9fa",
+      "bytes": 9138
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_rfft_fast_f32.c",
+      "sha256": "8accb846776747edb383ceb55f149078854f5468bc4207a49e3e28156010c577",
+      "bytes": 11077
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_rfft_fast_init_f32.c",
+      "sha256": "a1e18fa879dfd2c4a4aaa75e5d40b6950b36889f84bd303dddc9323738df63af",
+      "bytes": 4886
+    },
+    {
+      "file": "components/lib/dsp_lib/TransformFunctions/xtensa_rfft_init_f32.c",
+      "sha256": "6120b4c8a7229e2a5bdeb4605776e0963f299e368fde52c06b0acf7dc4b2a2bc",
+      "bytes": 345194
+    },
+    {
+      "file": "components/lib/dsp_lib/include/dsp_math.h",
+      "sha256": "cfe56bd266a552b0a248f2df3a27018fa1931752ec4a66009d08ac5b86b917c0",
+      "bytes": 2030
+    },
+    {
+      "file": "components/lib/dsp_lib/include/xtensa_common_tables.h",
+      "sha256": "035a6ace4668a93a84ea14461079ebe0b2b35421204e2b43b1fdcf4d8055c1cf",
+      "bytes": 5208
+    },
+    {
+      "file": "components/lib/dsp_lib/include/xtensa_const_structs.h",
+      "sha256": "e157b9b8ad93413e30d5ddb63b401b745ddc3d500ae1d254a4aa9c41ec0fcf8c",
+      "bytes": 1915
+    },
+    {
+      "file": "components/lib/dsp_lib/include/xtensa_math.h",
+      "sha256": "62564fdb2089cba183008e5287a5d93ab23004487866a2ad9793decad30d662b",
+      "bytes": 86196
+    },
+    {
+      "file": "components/platform/CMakeLists.txt",
+      "sha256": "8d95070d7d00ec973fb00944ec8e22a8bbf30f04890fa1961e55d729cb3d5343",
+      "bytes": 166
+    },
+    {
+      "file": "components/platform/platform.c",
+      "sha256": "02b703a251f4fb3bfd61cf2bdd1e785a13cc4fea2ef6da5a6ee37ef1a3d9b7f8",
+      "bytes": 3438
+    },
+    {
+      "file": "components/platform/platform.h",
+      "sha256": "3905a69c52360511e7840549351bf14e6c3d216bcbc5aec69eb2987c9445a6bc",
+      "bytes": 2665
+    },
+    {
+      "file": "components/platform/platform_cf2.c",
+      "sha256": "643f00df12cdec6e3cd9f74fe0b500a99c313fa45620d7a9d3f62dbc54e43a1b",
+      "bytes": 1877
+    },
+    {
+      "file": "components/platform/platform_esp32.c",
+      "sha256": "e7b80af21cd57cc0d9c9b6f539bb4d81362466b795f84314bb52b9484323a07a",
+      "bytes": 2023
+    },
+    {
+      "file": "components/platform/stm32_legacy.h",
+      "sha256": "607437722d3dde2ee7dfff62dbf5d14dd841b3bc474132217fe29f2a6857e93f",
+      "bytes": 1505
+    },
+    {
+      "file": "main/CMakeLists.txt",
+      "sha256": "1068bc79f582e9207733a22d3ae9371f532849803ca30491382dac4f315a9acd",
+      "bytes": 131
+    },
+    {
+      "file": "main/Kconfig.projbuild",
+      "sha256": "65117c64d8882b8a31480811e219d77ce4d1f3ee776747f658a89bd17b99d3bc",
+      "bytes": 15525
+    },
+    {
+      "file": "main/linker_fragment.lf",
+      "sha256": "b351664429dea473c0083e2b40e893f0adbf278097f78495285d065aa99b9e29",
+      "bytes": 356
+    },
+    {
+      "file": "main/main.c",
+      "sha256": "2916912c7ecd28d5fa3b31db80262d3be652c5521f6fb7a2efcd5ff8d8694847",
+      "bytes": 1639
+    },
+    {
+      "file": "sdkconfig.defaults",
+      "sha256": "a06930beda13a8c7478ca11ebce1637fde5c886263b9ebb83bb933af7901dad4",
+      "bytes": 1289
+    },
+    {
+      "file": "sdkconfig.defaults.esp32p4",
+      "sha256": "caad07e06b4894e846375c916a08d927ce131a88ed81a2202d9da40d95f07a2d",
+      "bytes": 212
+    },
+    {
+      "file": "sdkconfig.defaults.esp32s2",
+      "sha256": "de56871bedf991ed6132cfa2908d35efa5332c29b56fd9359d7604f4f0a059ae",
+      "bytes": 100
+    },
+    {
+      "file": "sdkconfig.defaults.esp32s3",
+      "sha256": "22db9e96823fcd1fa723abfb1342677fa55107b8e073f4b2c46f3c2969513bfc",
+      "bytes": 100
+    },
+    {
+      "file": "sdkconfig.defaults.esp32s31",
+      "sha256": "5f12439efca645428fb06ea178ad7d4b6f48c63808f3b0d9b6b47e7200410da6",
+      "bytes": 248
+    }
+  ]
+}

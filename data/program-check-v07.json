@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-21",
+  "upstream_commit": "9d5a4f85199ea056f40472b2248e10dcb6988b5c",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "real_udp_loopback": true,
+  "aircraft_connected": false,
+  "flight_controller_firmware_compiled": false
+}

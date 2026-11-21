@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+software/programming/esp-drone-source/
+build/
+dist/
+sdkconfig
+sdkconfig.old

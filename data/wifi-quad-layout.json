@@ -1,0 +1,189 @@
+{
+  "revision": "V0.7-structural-prototype",
+  "date": "2026-11-21",
+  "units": "mm",
+  "status": "Printable reference structure. Donor hardware and flight remain unverified.",
+  "coordinate_system": {
+    "origin": "Ground projection of the four motor centres",
+    "X": "toward the rear",
+    "Y": "toward the right",
+    "Z": "up",
+    "cinema4d_mapping": "(X, Y, Z) maps to (X, Z, -Y)"
+  },
+  "body": {
+    "size": [
+      105,
+      49,
+      11
+    ],
+    "center": [
+      0,
+      0,
+      14
+    ],
+    "corner_radius": 5
+  },
+  "motors": {
+    "centers_xy": [
+      [
+        -64,
+        -62
+      ],
+      [
+        -64,
+        62
+      ],
+      [
+        64,
+        -62
+      ],
+      [
+        64,
+        62
+      ]
+    ],
+    "center_z": 20.7,
+    "housing_diameter": 20.4,
+    "housing_height": 15,
+    "hub_diameter": 11,
+    "hub_height": 5.5,
+    "hub_center_z": 30
+  },
+  "arms": {
+    "root_abs_xy": [
+      24,
+      17
+    ],
+    "end_extension_each": 6,
+    "width": 14,
+    "height": 10,
+    "center_z": 17
+  },
+  "feet": {
+    "diameter": 8.4,
+    "height": 12,
+    "centers_xyz": [
+      [
+        -53.37017857872128,
+        -50.041450901061445,
+        0
+      ],
+      [
+        -53.37017857872128,
+        50.041450901061445,
+        0
+      ],
+      [
+        53.37017857872128,
+        -50.041450901061445,
+        0
+      ],
+      [
+        53.37017857872128,
+        50.041450901061445,
+        0
+      ]
+    ]
+  },
+  "props": {
+    "diameter": 64,
+    "bottom_plane_z": 30.35,
+    "thickness": 1.0,
+    "profile_tilt": 0.058
+  },
+  "board": {
+    "size": [
+      29,
+      25,
+      1.6
+    ],
+    "center": [
+      -5,
+      0,
+      20.5
+    ],
+    "component_top_z": 22.85
+  },
+  "camera_cover": {
+    "stl": "quad-camera-cover-v07.stl",
+    "origin": [
+      -49,
+      0,
+      19
+    ],
+    "size": [
+      27.8700008392334,
+      34.400001525878906,
+      11.0
+    ]
+  },
+  "camera_carrier": {
+    "size": [
+      8,
+      14.5,
+      8.2
+    ],
+    "center": [
+      -47.5,
+      0,
+      24.2
+    ],
+    "corner_radius": 1.7
+  },
+  "lens": {
+    "center": [
+      -53.45,
+      0,
+      24.5
+    ],
+    "diameter": 5.6,
+    "axial_length": 0.8
+  },
+  "battery": {
+    "body_size": [
+      48,
+      32,
+      12
+    ],
+    "tray_origin": [
+      12,
+      0,
+      24
+    ],
+    "floor_thickness": 1.2,
+    "mass_note": "Body is a fit envelope, without cable or plug. Capacity and mass depend on the selected donor battery."
+  },
+  "fasteners": {
+    "head_diameter_max": 4,
+    "head_height": 1.4,
+    "hole_pitch": 40.4
+  },
+  "strap": {
+    "width": 8,
+    "top_thickness": 0.6,
+    "undertray_bottom_z": 23.4,
+    "undertray_thickness": 0.4
+  },
+  "checks": {
+    "prop_to_central_structure_min": 5,
+    "tray_to_board_min": 1,
+    "strap_to_board_min": 0.5
+  },
+  "petg_density_g_cm3": 1.27,
+  "procurement": {
+    "target_rmb": 50,
+    "hardware_measured": false,
+    "battery_and_camera_compatibility_confirmed": false
+  },
+  "frame": {
+    "file": "quad-frame-v07.stl",
+    "origin": [
+      0,
+      0,
+      12
+    ],
+    "motor_pod_reference_diameter": 20.4,
+    "motor_hole_diameter": 20.8
+  },
+  "print_theoretical_petg_total_g": 23.61198284706796
+}

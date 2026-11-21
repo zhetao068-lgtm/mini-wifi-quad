@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1141" viewBox="0 0 1000 815">
+<rect width="1000" height="815" fill="white"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#547286"/></marker></defs>
+<style>text{font-family:Microsoft YaHei,Arial,sans-serif;fill:#22323f}</style>
+<text x="50" y="35" font-size="21" font-weight="bold">A  约50元白牌路线：保留整套原配电子</text>
+<text x="50" y="420" font-size="21" font-weight="bold">B  官方可编程参考：仅适用于对应飞控板</text>
+<rect x="60" y="85" width="170" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="145.0" y="111.5" text-anchor="middle" font-size="17">原配电池</text>
+<text x="145.0" y="135.5" text-anchor="middle" font-size="17">规格、极性实测</text>
+<rect x="340" y="85" width="230" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="455.0" y="111.5" text-anchor="middle" font-size="17">原机飞控</text>
+<text x="455.0" y="135.5" text-anchor="middle" font-size="17">含原配四路电机驱动</text>
+<rect x="720" y="50" width="220" height="135" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="830.0" y="99.5" text-anchor="middle" font-size="17">原配四电机和原桨</text>
+<text x="830.0" y="123.5" text-anchor="middle" font-size="17">保留原插座编号</text>
+<text x="830.0" y="147.5" text-anchor="middle" font-size="17">不套用未知线色</text>
+<rect x="60" y="245" width="170" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="145.0" y="271.5" text-anchor="middle" font-size="17">原配遥控器</text>
+<text x="145.0" y="295.5" text-anchor="middle" font-size="17">保留原协议</text>
+<rect x="340" y="245" width="230" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="455.0" y="271.5" text-anchor="middle" font-size="17">原配摄像头/图传</text>
+<text x="455.0" y="295.5" text-anchor="middle" font-size="17">保留原线束供电</text>
+<rect x="720" y="245" width="220" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="830.0" y="271.5" text-anchor="middle" font-size="17">手机原配App</text>
+<text x="830.0" y="295.5" text-anchor="middle" font-size="17">核对持续回传</text>
+<rect x="60" y="490" width="170" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="145.0" y="516.5" text-anchor="middle" font-size="17">匹配官方板的电池</text>
+<text x="145.0" y="540.5" text-anchor="middle" font-size="17">按板规格核对</text>
+<rect x="340" y="490" width="230" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="455.0" y="516.5" text-anchor="middle" font-size="17">ESP32-S2-Drone V1.2</text>
+<text x="455.0" y="540.5" text-anchor="middle" font-size="17">ESP32-S2-WROVER</text>
+<rect x="720" y="455" width="220" height="135" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="830.0" y="504.5" text-anchor="middle" font-size="17">板载驱动输出→电机</text>
+<text x="830.0" y="528.5" text-anchor="middle" font-size="17">GPIO 5 / 6 / 3 / 4</text>
+<text x="830.0" y="552.5" text-anchor="middle" font-size="17">仅是驱动控制信号</text>
+<rect x="60" y="650" width="170" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="145.0" y="676.5" text-anchor="middle" font-size="17">手机/电脑</text>
+<text x="145.0" y="700.5" text-anchor="middle" font-size="17">Wi-Fi控制</text>
+<rect x="340" y="650" width="230" height="65" rx="8" stroke="#8fa8b7" fill="#eef3f6"/>
+<text x="455.0" y="676.5" text-anchor="middle" font-size="17">板内MPU6050</text>
+<text x="455.0" y="700.5" text-anchor="middle" font-size="17">SDA11 / SCL10 / INT12</text>
+<rect x="720" y="650" width="220" height="65" rx="8" stroke="#8fa8b7" fill="#fff1cf"/>
+<text x="830.0" y="676.5" text-anchor="middle" font-size="17">图传尚未集成</text>
+<text x="830.0" y="700.5" text-anchor="middle" font-size="17">模块/网络/功耗待定</text>
+<polyline points="230,117 340,117" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="245" y="102" font-size="14">原电源接口</text>
+<polyline points="570,117 720,117" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="585" y="102" font-size="14">原驱动线束</text>
+<polyline points="455,150 455,245" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="466" y="198" font-size="14">原线束供电</text>
+<polyline points="570,277 720,277" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="589" y="261" font-size="14">Wi-Fi画面</text>
+<polyline points="230,277 300,277 300,140 340,140" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="242" y="333" font-size="14">遥控信号</text>
+<polyline points="230,522 340,522" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="245" y="506" font-size="14">匹配电源</text>
+<polyline points="570,522 720,522" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="593" y="506" font-size="14">板载驱动</text>
+<polyline points="455,555 455,650" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="468" y="602" font-size="14">板内I2C/INT</text>
+<polyline points="230,682 300,682 300,545 340,545" fill="none" stroke="#547286" stroke-width="2" marker-end="url(#a)"/>
+<text x="239" y="741" font-size="14">UDP 2390</text>
+<text x="50" y="793" font-size="16">框图不是未知白牌的逐针焊接图。电机不能直接接GPIO；摄像头电源不能猜电压。</text></svg>

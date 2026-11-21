@@ -1,0 +1,554 @@
+{
+  "date": "2026-11-21",
+  "revision": "V0.7-structural-prototype",
+  "units": "mm",
+  "status": "Geometry checks only; not a flight-ready or physically validated design.",
+  "parameters": {
+    "frame_bottom": 12.0,
+    "floor_t": 1.2,
+    "body_l": 105.0,
+    "body_w": 49.0,
+    "rim": 2.0,
+    "arm_w": 8.0,
+    "arm_wall": 0.9,
+    "arm_rib_h": 5.5,
+    "motor_x": 64.0,
+    "motor_y": 62.0,
+    "root_x": 24.0,
+    "root_y": 17.0,
+    "pod_d": 20.4,
+    "pod_clearance": 0.2,
+    "collar_wall": 2.0,
+    "collar_h": 7.5,
+    "collar_split": 1.2,
+    "seat_open_d": 17.0,
+    "foot_d": 8.4,
+    "foot_inner_d": 4.2,
+    "foot_height": 12.0,
+    "foot_cap_h": 5.0,
+    "foot_pilot_d": 1.7,
+    "foot_offset": 16.0,
+    "fastener_clear_d": 2.2,
+    "battery_x": 12.0,
+    "battery_hole_y": 20.2,
+    "battery_pad_d": 7.2,
+    "battery_pad_top": 19.5,
+    "cover_hole_y": 14.0,
+    "cover_pad_d": 7.2,
+    "cover_pad_top": 19.0,
+    "eps": 0.02
+  },
+  "parts": {
+    "quad-frame-v07.stl": {
+      "size_mm": [
+        152.8000030517578,
+        148.8000030517578,
+        8.699999809265137
+      ],
+      "volume_mm3": 13709.5286,
+      "petg_unit_theory_g": 17.411101275333625,
+      "quantity": 1,
+      "installed": true,
+      "assembly_origin_mm": [
+        0,
+        0,
+        12.0
+      ],
+      "note": "Integral frame, arms, pod collars, PCB pads and camera cradle. Fit prototype.",
+      "sha256": "cd70339b0c02d305cf75858b5d5552b0d36c5a4fa3df0097ce000201df1d6597"
+    },
+    "quad-foot-v07.stl": {
+      "size_mm": [
+        8.399999618530273,
+        8.399999618530273,
+        12.0
+      ],
+      "volume_mm3": 555.0939,
+      "petg_unit_theory_g": 0.7049693064602021,
+      "quantity": 4,
+      "installed": true,
+      "assembly_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "note": "Four separate feet; top pilot 1.7 mm, 2 x 6 mm self-tapping screw reference.",
+      "sha256": "cbd3b478d25d09b5912a1655bf03f9e038dbedfb541f76d958fbdafa6d3850dc"
+    },
+    "quad-camera-cover-v07.stl": {
+      "size_mm": [
+        27.8700008392334,
+        34.400001525878906,
+        11.0
+      ],
+      "volume_mm3": 866.7129,
+      "petg_unit_theory_g": 1.100725320759521,
+      "quantity": 1,
+      "installed": true,
+      "assembly_origin_mm": [
+        -49,
+        0,
+        19
+      ],
+      "note": "Added two mount ears; opening is open to the bottom at the front.",
+      "sha256": "5da53c5f3ebac074236802a00c35e41500c466e1830324d503ad63147c2a21e3"
+    },
+    "quad-cover-gauge-v07.stl": {
+      "size_mm": [
+        27.8700008392334,
+        34.400001525878906,
+        1.2000000476837158
+      ],
+      "volume_mm3": 132.6904,
+      "petg_unit_theory_g": 0.16851680421741405,
+      "quantity": 1,
+      "installed": false,
+      "assembly_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "note": "Fit gauge for the revised hood and its ears; do not install in the aircraft.",
+      "sha256": "ed9622d585cb1bd78030b4d0838f3c9367e8c568ae989eab327ff4bd5182c8ff"
+    },
+    "quad-collar-gauge-v07.stl": {
+      "size_mm": [
+        24.760700225830078,
+        24.799999237060547,
+        8.699999809265137
+      ],
+      "volume_mm3": 1354.1516,
+      "petg_unit_theory_g": 1.7197725931373018,
+      "quantity": 1,
+      "installed": false,
+      "assembly_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "note": "Test collar reference diameter 20.4 mm before printing the frame.",
+      "sha256": "767b0274b833a30123b41217accd1f76d804a8f01071f1f543601e43fdcb004d"
+    },
+    "wifi-quad-battery-tray-fit.stl": {
+      "size_mm": [
+        51.79999923706055,
+        47.599998474121094,
+        3.0
+      ],
+      "volume_mm3": 1639.5791,
+      "petg_unit_theory_g": 2.082265484998803,
+      "quantity": 1,
+      "installed": true,
+      "assembly_origin_mm": [
+        12,
+        0,
+        24
+      ],
+      "note": "",
+      "sha256": "d5dfc4bedc75d51e5826520e3def6c5290e86f8349428936d29ea1b6de3268ef"
+    },
+    "wifi-quad-battery-spacer.stl": {
+      "size_mm": [
+        5.199999809265137,
+        5.199999809265137,
+        4.5
+      ],
+      "volume_mm3": 77.9581,
+      "petg_unit_theory_g": 0.09900677006760036,
+      "quantity": 2,
+      "installed": true,
+      "assembly_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "note": "Assembly centers x12, y +/-20.2, bottom z19.5.",
+      "sha256": "bb2fd2d4765fdbd0065e5896cf93bdff099909d2bbee27a3db02510156671a8c"
+    }
+  },
+  "checks": [
+    {
+      "name": "quad-frame-v07.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "quad-frame-v07.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "quad-frame-v07.stl positive volume",
+      "value": 13709.528563254822,
+      "passed": true
+    },
+    {
+      "name": "quad-frame-v07.stl closed edges",
+      "value": 11034,
+      "passed": true
+    },
+    {
+      "name": "quad-frame-v07.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "quad-frame-v07.stl saved volume",
+      "value": 13709.528563254822,
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl positive volume",
+      "value": 555.0939420946472,
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl closed edges",
+      "value": 864,
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "quad-foot-v07.stl saved volume",
+      "value": 555.0939420946472,
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl positive volume",
+      "value": 866.7128509917487,
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl closed edges",
+      "value": 1503,
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "quad-camera-cover-v07.stl saved volume",
+      "value": 866.7128509917487,
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl positive volume",
+      "value": 132.69039702158585,
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl closed edges",
+      "value": 1290,
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "quad-cover-gauge-v07.stl saved volume",
+      "value": 132.69039702158585,
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl positive volume",
+      "value": 1354.1516481396077,
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl closed edges",
+      "value": 876,
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "quad-collar-gauge-v07.stl saved volume",
+      "value": 1354.1516481396077,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl positive volume",
+      "value": 1639.5791220463013,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl closed edges",
+      "value": 2436,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-tray-fit.stl saved volume",
+      "value": 1639.5791220463013,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl manifold",
+      "value": "Error.NoError",
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl connected solid",
+      "value": 1,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl positive volume",
+      "value": 77.95808666740186,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl closed edges",
+      "value": 384,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl consistent winding",
+      "value": true,
+      "passed": true
+    },
+    {
+      "name": "wifi-quad-battery-spacer.stl saved volume",
+      "value": 77.95808666740186,
+      "passed": true
+    },
+    {
+      "name": "frame / hood overlap mm3",
+      "value": -0.0,
+      "passed": true
+    },
+    {
+      "name": "frame / battery overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "frame / tray overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "frame / PCB overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "hood / tray overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "hood / camera envelope overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "tray / battery overlap mm3",
+      "value": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "foot 1 / frame overlap mm3",
+      "value": 7.601341431295872e-16,
+      "passed": true
+    },
+    {
+      "name": "foot 2 / frame overlap mm3",
+      "value": -1.1665473274857785e-15,
+      "passed": true
+    },
+    {
+      "name": "foot 3 / frame overlap mm3",
+      "value": -9.433074306937403e-15,
+      "passed": true
+    },
+    {
+      "name": "foot 4 / frame overlap mm3",
+      "value": -1.6579619621648334e-15,
+      "passed": true
+    },
+    {
+      "name": "spacer -20.2 / frame overlap mm3",
+      "value": -1.111090386363145e-15,
+      "passed": true
+    },
+    {
+      "name": "spacer -20.2 / tray overlap mm3",
+      "value": 1.078945697773081e-15,
+      "passed": true
+    },
+    {
+      "name": "spacer -20.2 / PCB overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spacer 20.2 / frame overlap mm3",
+      "value": -1.4194374842180224e-15,
+      "passed": true
+    },
+    {
+      "name": "spacer 20.2 / tray overlap mm3",
+      "value": 1.7518798709936583e-15,
+      "passed": true
+    },
+    {
+      "name": "spacer 20.2 / PCB overlap mm3",
+      "value": 0.0,
+      "passed": true
+    },
+    {
+      "name": "motor reference 1 / collar overlap mm3",
+      "value": 4.5811726962883024e-07,
+      "passed": true
+    },
+    {
+      "name": "motor reference 2 / collar overlap mm3",
+      "value": 5.291907626585089e-07,
+      "passed": true
+    },
+    {
+      "name": "motor reference 3 / collar overlap mm3",
+      "value": 4.415451230396202e-07,
+      "passed": true
+    },
+    {
+      "name": "motor reference 4 / collar overlap mm3",
+      "value": 3.621850150147462e-07,
+      "passed": true
+    }
+  ],
+  "passed": 63,
+  "petg_installed_theory_g": 23.61198284706796,
+  "motor_pod_reference_not_measured": true,
+  "flight_tested": false,
+  "foot_centers_xyz_mm": [
+    [
+      -53.37017857872128,
+      -50.041450901061445,
+      0
+    ],
+    [
+      -53.37017857872128,
+      50.041450901061445,
+      0
+    ],
+    [
+      53.37017857872128,
+      -50.041450901061445,
+      0
+    ],
+    [
+      53.37017857872128,
+      50.041450901061445,
+      0
+    ]
+  ],
+  "camera_mount_holes_xy_mm": [
+    [
+      -41,
+      -14
+    ],
+    [
+      -41,
+      14
+    ]
+  ],
+  "battery_mount_holes_xy_mm": [
+    [
+      12,
+      -20.2
+    ],
+    [
+      12,
+      20.2
+    ]
+  ],
+  "prop_envelope_mm": [
+    192,
+    188,
+    37.8
+  ],
+  "hardware_notes": [
+    "20.4 mm motor pod and 29 x 25 mm board remain reference sizes.",
+    "Use a retaining band around each split collar and measure axial retention before flight.",
+    "Battery support holes now have matching printed frame holes."
+  ],
+  "printed_parts_only_centroid_mm": [
+    -4.002,
+    0.0,
+    15.333
+  ],
+  "printed_mass_independent_integral_g": 23.611982847067928,
+  "native_scene_sha256": "2297b566fccaa879ce0d230ef927a36366f72f0d5d335624dc72db9fbee59f55",
+  "saved_native_scene_crosscheck": {
+    "passed": true,
+    "unit": "1 mm",
+    "printed_instances": 9
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050">
+<rect width="1200" height="1050" fill="#fff"/>
+<style>text{font-family:Microsoft YaHei,Arial,sans-serif;fill:#22323f} .dim{stroke:#a74520;stroke-width:1.5;fill:none} .guide{stroke:#d0dce4;stroke-width:1.4;fill:none;stroke-dasharray:7 6}</style>
+<text x="55" y="55" font-size="27">V0.7 结构定位图（mm）</text>
+<text x="55" y="88" font-size="16">20.4 mm电机舱为参考占位。原机尺寸、固定和承载尚待验证。</text>
+<circle cx="254.0" cy="262.0" r="128.0" stroke="#c9d7e1" fill="none" stroke-width="1.4" stroke-dasharray="6 5"/>
+<line x1="414.0" y1="442.0" x2="254.0" y2="262.0" stroke="#b7cbd6" stroke-width="32"/>
+<circle cx="254.0" cy="262.0" r="49.6" stroke="#4e6b7c" fill="#eef3f6" stroke-width="1.4"/>
+<circle cx="254.0" cy="262.0" r="41.6" stroke="#4e6b7c" fill="none" stroke-width="1.4"/>
+<circle cx="254.0" cy="758.0" r="128.0" stroke="#c9d7e1" fill="none" stroke-width="1.4" stroke-dasharray="6 5"/>
+<line x1="414.0" y1="578.0" x2="254.0" y2="758.0" stroke="#b7cbd6" stroke-width="32"/>
+<circle cx="254.0" cy="758.0" r="49.6" stroke="#4e6b7c" fill="#eef3f6" stroke-width="1.4"/>
+<circle cx="254.0" cy="758.0" r="41.6" stroke="#4e6b7c" fill="none" stroke-width="1.4"/>
+<circle cx="766.0" cy="262.0" r="128.0" stroke="#c9d7e1" fill="none" stroke-width="1.4" stroke-dasharray="6 5"/>
+<line x1="606.0" y1="442.0" x2="766.0" y2="262.0" stroke="#b7cbd6" stroke-width="32"/>
+<circle cx="766.0" cy="262.0" r="49.6" stroke="#4e6b7c" fill="#eef3f6" stroke-width="1.4"/>
+<circle cx="766.0" cy="262.0" r="41.6" stroke="#4e6b7c" fill="none" stroke-width="1.4"/>
+<circle cx="766.0" cy="758.0" r="128.0" stroke="#c9d7e1" fill="none" stroke-width="1.4" stroke-dasharray="6 5"/>
+<line x1="606.0" y1="578.0" x2="766.0" y2="758.0" stroke="#b7cbd6" stroke-width="32"/>
+<circle cx="766.0" cy="758.0" r="49.6" stroke="#4e6b7c" fill="#eef3f6" stroke-width="1.4"/>
+<circle cx="766.0" cy="758.0" r="41.6" stroke="#4e6b7c" fill="none" stroke-width="1.4"/>
+<rect x="300.0" y="412.0" width="420" height="196" rx="20" fill="#eef3f6" stroke="#4e6b7c"/>
+<circle cx="296.5192856851149" cy="309.83419639575425" r="16.8" stroke="#6a899c" fill="#d9e6ed" stroke-width="1.4"/>
+<circle cx="296.5192856851149" cy="710.1658036042458" r="16.8" stroke="#6a899c" fill="#d9e6ed" stroke-width="1.4"/>
+<circle cx="723.4807143148851" cy="309.83419639575425" r="16.8" stroke="#6a899c" fill="#d9e6ed" stroke-width="1.4"/>
+<circle cx="723.4807143148851" cy="710.1658036042458" r="16.8" stroke="#6a899c" fill="#d9e6ed" stroke-width="1.4"/>
+<circle cx="558.0" cy="429.2" r="4.4" stroke="#a74520" fill="#a74520" stroke-width="1.4"/>
+<circle cx="558.0" cy="590.8" r="4.4" stroke="#a74520" fill="#a74520" stroke-width="1.4"/>
+<circle cx="346.0" cy="454.0" r="4.4" stroke="#167381" fill="#167381" stroke-width="1.4"/>
+<circle cx="346.0" cy="566.0" r="4.4" stroke="#167381" fill="#167381" stroke-width="1.4"/>
+<rect x="454.4" y="414.8" width="207.2" height="190.4" fill="none" stroke="#a74520" stroke-dasharray="5 5"/>
+<text x="900" y="250" font-size="18">电机中心矩形</text>
+<text x="900" y="279" font-size="20">128 × 124</text>
+<text x="900" y="339" font-size="18">桨盘直径64</text>
+<text x="900" y="409" font-size="18">机座孔20.8</text>
+<text x="900" y="469" font-size="18" fill="#a74520">电池托孔距40.4</text>
+<text x="900" y="529" font-size="18" fill="#167381">罩孔距28</text>
+<text x="900" y="589" font-size="18">机脚位置见JSON</text>
+<text x="900" y="649" font-size="18">X向尾，Y向右</text>
+<text x="55" y="973" font-size="18">结构件外廓152.8 × 148.8；含桨盘192 × 188；装配总高参考37.8。</text>
+<text x="55" y="1005" font-size="16">此图用于定位和读尺寸。实际可打印几何见STL/SCAD，3MF只含几何，不含切片参数。</text>
+</svg>
